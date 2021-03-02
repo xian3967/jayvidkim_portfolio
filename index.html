@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
   <title>PORTFOLIO</title>
@@ -13,16 +12,101 @@
   <meta property="og:url" content="">
   <meta property="og:site_name" content="">
   <meta property="og:description" content="">
-  <link rel="stylesheet" href="./assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./assets/js/slick.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/circular.css">
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+  <header class="l-header">
+    <nav class="l-header__nav">
+      <div class="l-header__nav__logo__wrapper">
+        <p class="nav__logo circular">KIM JEONG HYEON</p>
+      </div>
+      <div class="l-header__nav__menu__wrapper">
+        <ul>
+          <li>About Me</li>
+          <li>Skills</li>
+          <li>Strength</li>
+          <li>Project</li>
+          <li>FAQ</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="l-header__main">
+      <div class="l-header__main__background">
+        <div class="l-header__main__background__text">
+          <p>Front-End Engineer</p>
+          <p>KIM JEONG HYEON</p>
+        </div>
+        <div class="l-header__main__background__slick">
+          <div class="l-header__main__background__img l-header__main__background__img__01"></div>
+          <div class="l-header__main__background__img l-header__main__background__img__02"></div>
+          <div class="l-header__main__background__img l-header__main__background__img__03"></div>
+        </div>
+        <div class="l-header__main__scroll__wrapper">
+          <div class="l-header__main__scroll">
+            <p class="l-header__main__scrollTxt">scroll</p>
+            <div class="l-header__main__scrollLine"></div>
+          </div>
+        </div>
+      </div>
+      <div class="l-header__main__contents introJs">
+        <div class="l-header__main__side-menu">
+          <div class="l-header__main__title circular">
+            <p>Front-End Engineer</p>
+            <p>KIM JEONG HYEON</p>
+          </div>
+          <p class="l-header__main__img"><img src="./assets/images/header_img_01.jpg" class="header_img"></p>
+        </div>
+        <div class="l-header__intro">
+          <div class="intro">
+            <div style="position:absolute; top:50%; transform: translate(-50%, -50%); left:50%; color:#fff; z-index:200">TEST</div>
+          </div>
+          <div class="transition">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="">
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>
+    TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>TEST<br>
+  </div>
+  <script src="./assets/js/js.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      $(document).ready(function() {
+        $('.l-header__main__background__slick').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          infinite: true,
+          fade: true,
+          pauseOnHover:false
+        });
+      });
 
+    })(jQuery);
+  </script>
 </body>
 
 </html>

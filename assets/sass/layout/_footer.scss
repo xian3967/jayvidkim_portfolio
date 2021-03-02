@@ -1,1 +1,19 @@
-
+.l-footer{
+    background:$black;
+    width:100%;
+    .l-footer__wrapper{
+      margin:0 auto;
+      width:100%;
+      max-width: 1200px;
+      .l-footer__text_box{
+        p:nth-child(1){
+          color:$white;
+          @include fz(12);
+          padding-bottom: 5px;
+          padding-top: 5px;
+          text-align: center;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+}

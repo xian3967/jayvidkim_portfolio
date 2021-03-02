@@ -12,6 +12,16 @@ $(window).load(function(){
     $('.introJs').addClass('display-block');
   }, 800);
   setTimeout(function() {
+    /*var mediaMatch = window.matchMedia("(max-width: 965px)");
+    if (mediaMatch.matches) {
+      $('.l-header__main__background__text').css('color','black');
+    }else{
+      $('.l-header__main__background__text').hide();
+    }
+    */
+    $('.l-header__main__background__text').css('color','black');
+  }, 900);
+  setTimeout(function() {
     $('.introJs').removeClass('display-intro display-loaded');
   }, 1200);
   setTimeout(function() {
