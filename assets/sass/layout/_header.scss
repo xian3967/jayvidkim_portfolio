@@ -16,9 +16,15 @@ body{
       width:100%;
       z-index: 300;
       box-shadow: 3px 3px 2px 0.5px rgba(0,0,0,0.1);
+      @media (max-width: 980px) {
+          padding-bottom: 10px;
+      }
       .l-header__nav__logo__wrapper{
         margin:15px 0 0 20px;
         display: inline-block;
+        @media (max-width: 980px) {
+            margin:10px 0 0 15px;
+        }
         .nav__logo{
           @include fzb(20);
           color:$black;
@@ -63,8 +69,8 @@ body{
       .l-header__nav__hambugermenu__button{
         float:right;
         display:none;
-        padding-top: 17px;
-        padding-right: 20px;
+        padding-top: 12px;
+        padding-right: 15px;
         @media (max-width: 980px) {
             display: block;
         }
@@ -179,6 +185,7 @@ body{
           a{
             border: 3px solid #000;
             margin-top: 30px;
+            cursor: pointer;
           }
         }
       }
@@ -324,17 +331,12 @@ body{
           padding-left: 20px;
           padding-right:20px;
           width:100%;
-          p:nth-child(1){
+          h1{
             font-size:1.3vw;
-          }
-          p:nth-child(2){
-            font-size:2.3vw;
-            font-weight: bold;
-          }
-          p:nth-child(3){
-            font-size:0.8vw;
-            color:$f9;
-            margin-top:20px;
+            span{
+              font-size:2.3vw;
+              font-weight: bold;
+            }
           }
         }
         .l-header__main__img{

@@ -76,8 +76,8 @@
     event.preventDefault();
 
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 300);
+      scrollTop: $($.attr(this, 'href')).offset().top - 80
+    }, 500);
   });
   $('.l-header__nav__hambugermenu__button').click(function(){
     $('.l-header__nav__hambugermenu__button').toggleClass('open');
