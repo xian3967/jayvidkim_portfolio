@@ -84,7 +84,18 @@
     $('body').toggleClass('menu_open');
     $('.l-header__nav__hambugermenu').fadeToggle();
   });
+
   $('.l-header__nav__hambugermenu ul li a').click(function(){
     $('.l-header__nav__hambugermenu__button').click();
+  });
+
+  $('.more_button').click(function(){
+    $('.p-main__project__contents_box_hide').fadeIn();
+    $('.more_button').hide();
+  });
+
+  $('.more_button_close').click(function(){
+    $('.p-main__project__contents_box_hide').fadeOut();
+    $('.more_button').show();
   });
 })(jQuery);

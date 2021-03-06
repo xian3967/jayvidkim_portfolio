@@ -1,6 +1,6 @@
 body{
   overflow-x: hidden;
-  font-family: 'Neue Helvetica W01', 'AXIS Font Japanese W55', 'Helvetica Neue', sans-serif;
+  //font-family: 'Neue Helvetica W01', 'AXIS Font Japanese W55', 'Helvetica Neue', sans-serif;
 }
 .menu_open{
   overflow: hidden !important;
@@ -348,7 +348,7 @@ body{
           text-align: center;
           @media (max-width: 1200px) {
             width: 40vw;
-            bottom:4vw;
+            bottom:2vw;
           }
           img{
             width:100%;

@@ -140,4 +140,181 @@
       }
     }
   }
+  .p-main__skill{
+  margin-top: 80px;
+  width:100%;
+  background: url('../images/section_skills_img_01.jpg') center;
+  background-size: cover;
+  padding:0 3%;
+  .p-main__skill_wrapper{
+    margin:0 auto;
+    width:100%;
+    max-width: 1200px;
+    .p-main__skill__title{
+      letter-spacing: 3px;
+      padding:30px 0 0px;
+      text-align: center;
+      letter-spacing: 3px;
+      @include fzb(32);
+      line-height: 3.2rem;
+    }
+    .p-main__skill__subtitle{
+      text-align: center;
+      @include fz(20);
+      color:$f9;
+      margin-bottom: 20px;
+    }
+    .p-main__skill__contents_box{
+      display: flex;
+      padding-bottom: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+      .p-main__skill__contents{
+        width: 33.3%;
+        padding: 0 30px;
+        border-right: 1px dashed rgba(0,0,0,.1);
+        margin-bottom:30px;
+        @media (min-width: 1024px) {
+          &:nth-child(3n){
+            border-right:none;
+          }
+        }
+        @media (max-width: 1023px) {
+          width:50%;
+          padding:0 30px;
+          margin-bottom:30px;
+          &:nth-child(2n){
+            border-right:none;
+          }
+        }
+        @media (max-width: 767px) {
+          width:100%;
+          padding:0;
+          margin-bottom:20px;
+          border-right: none;
+        }
+        h3{
+          color:$black;
+          @include fzb(26);
+        }
+        p{
+          color:$f9;
+          @include fz(14);
+        }
+      }
+    }
+  }
+  }
+  .p-main__project{
+  margin-top: 80px;
+  width:100%;
+  padding:0 3%;
+  .p-main__project_wrapper{
+    margin:0 auto;
+    width:100%;
+    max-width: 1200px;
+    .p-main__project__title{
+      letter-spacing: 3px;
+      padding:30px 0 0px;
+      text-align: center;
+      letter-spacing: 3px;
+      @include fzb(32);
+      line-height: 3.2rem;
+    }
+    .p-main__project__subtitle{
+      text-align: center;
+      @include fz(20);
+      color:$f9;
+      margin-bottom: 20px;
+    }
+    .p-main__project__contents_box_hide{
+      display: none;
+    }
+    .p-main__project__contents_box{
+      width:100%;
+      .more_button_wrapper{
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        a{
+          width: 100%;
+          margin:10px 0;
+          display: block;
+          background: #333;
+          padding: 10px;
+          color: #fff;
+          @include fz(14);
+          position: relative;
+          text-align: center;
+          &:hover{
+            opacity: 0.7;
+          }
+        }
+      }
+      .p-main__project__contents{
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 30px;
+        .p-main__project__contents_left{
+          width: 400px;
+          border-top: 3px solid #222;
+          padding: 20px 10px;
+          text-align: center;
+          @media (max-width: 768px) {
+            width: 100%;
+            padding:10px;
+          }
+          img{
+            box-shadow: 2px 2px $f9;
+            width:100%;
+            height:auto;
+          }
+          .button{
+            padding:0 5px;
+            width:100%;
+            a{
+              width: 100%;
+              margin:10px 0;
+              display: block;
+              background: #333;
+              padding: 10px;
+              color: #fff;
+              @include fz(14);
+              position: relative;
+              text-align: center;
+              &:after{
+                content: '>';
+                position: absolute;
+                color: #fff;
+                top: 9px;
+                right: 10px;
+              }
+              &:hover{
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+        .p-main__project__contents_right{
+          width: calc(100% - 450px);
+          border-top: 3px solid #222;
+          margin-left: 50px;
+          padding: 20px 20px;
+          @media (max-width: 768px) {
+            width: 100%;
+            margin-left: 0;
+            border-top:none;
+            padding: 0 10px 10px;
+          }
+          h3{
+            @include fzb(20);
+          }
+          p{
+            @include fzb(14);
+          }
+        }
+      }
+    }
+  }
+  }
 }
