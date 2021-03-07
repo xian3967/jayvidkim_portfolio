@@ -98,4 +98,16 @@
     $('.p-main__project__contents_box_hide').fadeOut();
     $('.more_button').show();
   });
+
+  $('.strength_button_img').click(function(event){
+    var id = event.target.id;
+    $('.strength_img').hide();
+    $('.strength_text').hide();
+    $('.strength_button').removeClass('button_checked');
+    setTimeout(function() {
+      $('.img_'  + id).fadeIn();
+      $('.text_' + id).fadeIn();
+      $('.strength_button_' + id).addClass('button_checked');
+    }, 100);
+  });
 })(jQuery);
