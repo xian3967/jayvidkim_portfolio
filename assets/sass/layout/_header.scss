@@ -240,7 +240,6 @@ body{
           right:auto;
           left:50%;
           transform: translateX(-50%);
-          bottom:90px;
         }
         .l-header__main__scroll{
           display: -webkit-box;
@@ -289,22 +288,30 @@ body{
           position: relative;
         }
         .l-header__main__background__img__01{
-          background: url('../images/main.jpg') fixed;
+          background: url('../images/main.jpg') no-repeat top center fixed;
           background-size: cover;
-          background-position: top center;
-          background-repeat: no-repeat;
         }
         .l-header__main__background__img__02{
-          background: url('../images/section_project_img_05.jpg') fixed;
+          background: url('../images/section_project_img_05.jpg') no-repeat top center fixed;
           background-size: cover;
-          background-position: top center;
-          background-repeat: no-repeat;
         }
         .l-header__main__background__img__03{
-          background: url('../images/section_project_img_03.jpg') fixed;
+          background: url('../images/section_project_img_03.jpg') no-repeat top center fixed;
           background-size: cover;
-          background-position: top center;
-          background-repeat: no-repeat;
+        }
+        @media (max-width: 980px) {
+          .l-header__main__background__img__01{
+            background: url('../images/main.jpg') no-repeat top center scroll;
+            background-size: cover;
+          }
+          .l-header__main__background__img__02{
+            background: url('../images/section_project_img_05.jpg') no-repeat top center scroll;
+            background-size: cover;
+          }
+          .l-header__main__background__img__03{
+            background: url('../images/section_project_img_03.jpg') no-repeat top center scroll;
+            background-size: cover;
+          }
         }
       }
 

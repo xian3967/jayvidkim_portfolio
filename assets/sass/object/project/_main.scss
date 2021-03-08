@@ -17,7 +17,7 @@
     .p-main__about_wrapper{
       margin:0 auto;
       width:100%;
-      max-width: 1200px;
+      max-width: 1100px;
       padding: 0 3%;
       .p-main__about__title{
         text-align: center;
@@ -93,7 +93,7 @@
     }
   }
   .p-main__contact{
-    margin-top:80px;
+    margin-top:100px;
     background: url('../images/section_contact_img_01.jpg') center;
     background-size: cover;
     .p-main__contact_wrapper{
@@ -141,7 +141,7 @@
     }
   }
   .p-main__skill{
-  margin-top: 80px;
+  margin-top: 100px;
   width:100%;
   background: url('../images/section_skills_img_01.jpg') center;
   background-size: cover;
@@ -149,7 +149,7 @@
   .p-main__skill_wrapper{
     margin:0 auto;
     width:100%;
-    max-width: 1200px;
+    max-width: 1100px;
     .p-main__skill__title{
       letter-spacing: 3px;
       padding:30px 0 0px;
@@ -190,8 +190,13 @@
         @media (max-width: 767px) {
           width:100%;
           padding:0;
-          margin-bottom:20px;
+          margin-bottom:15px;
           border-right: none;
+          border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+          padding-bottom: 15px;
+          &:last-child{
+            border-bottom:none;
+          }
         }
         h3{
           color:$black;
@@ -206,13 +211,14 @@
   }
   }
   .p-main__project{
-  margin-top: 80px;
+  margin-top: 100px;
   width:100%;
   padding:0 3%;
+  background: #f3f3f3;
   .p-main__project_wrapper{
     margin:0 auto;
     width:100%;
-    max-width: 1200px;
+    max-width: 1100px;
     .p-main__project__title{
       letter-spacing: 3px;
       padding:30px 0 0px;
@@ -236,6 +242,7 @@
         display: block;
         width: 200px;
         margin: 0 auto;
+        padding-bottom: 20px;
         a{
           width: 100%;
           margin:10px 0;
@@ -260,7 +267,10 @@
           border-top: 3px solid #222;
           padding: 20px 10px;
           text-align: center;
-          @media (max-width: 768px) {
+          @media (max-width: 1024px) {
+            width: 300px;
+          }
+          @media (max-width: 767px) {
             width: 100%;
             padding:10px;
           }
@@ -300,7 +310,10 @@
           border-top: 3px solid #222;
           margin-left: 50px;
           padding: 20px 20px;
-          @media (max-width: 768px) {
+          @media (max-width: 1024px) {
+            width: calc(100% - 350px);
+          }
+          @media (max-width: 767px) {
             width: 100%;
             margin-left: 0;
             border-top:none;
@@ -327,9 +340,9 @@
     margin:0 auto;
     width:100%;
     max-width: 1200px;
+    padding:0 3%;
     .p-main__strength__title{
       letter-spacing: 3px;
-      padding:30px 0 0px;
       text-align: center;
       @include fzb(32);
       color:$black;
@@ -351,8 +364,9 @@
         margin:0 2.5%;
         position:relative;
         z-index: 7;
-        @media (max-width: 860px) {
+        @media (max-width: 767px) {
           width: 100%;
+          margin:0 0 15px 0;
         }
         .base_img{
           width:100%;
@@ -374,11 +388,11 @@
         width:40%;
         margin:0 3%;
         background: #fff;
-        @media (max-width: 860px) {
+        position:relative;
+        @media (max-width: 767px) {
           width: 100%;
-        }
+          margin:0;        }
         .strength_text_box{
-          min-height: 260px;
           overflow: hidden;
           .strength_text{
             display: none;
@@ -400,31 +414,48 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top:20px;
-        }
-        .strength_button{
-          width:25%;
-          margin:0 5px;
-          border:3px solid #fff;
-          overflow: hidden;
-          transition: 0.7s;
-          .img{
-            width:100%;
-            transition: 0.7s;
-            cursor: pointer;
-            &:hover{
-               transform: scale(1.1);
+          margin-top:50px;
+          @media (max-width: 930px) {
+            margin-top:20px;
+          }
+          .strength_button{
+            width:25%;
+            margin:0 5px;
+            border:3px solid #fff;
+            overflow: hidden;
+            transition: 0.5s;
+            position: relative;
+            .img{
+              width:100%;
+              transition: 0.5s;
+              cursor: pointer;
+              &:hover{
+                 transform: scale(1.1);
+              }
+            }
+            @media (max-width: 500px) {
+              margin:0 2px;
             }
           }
-        }
-        .strength_button:first-child{
-          margin:0 5px 0 0;
-        }
-        .strength_button:last-child{
-          margin:0 0 0 5px;
-        }
-        .button_checked{
-          border:3px solid #191919;
+          .strength_button:first-child{
+            margin:0 5px 0 0;
+            @media (max-width: 500px) {
+              margin:0 2px 0 0;
+            }
+          }
+          .strength_button:last-child{
+            margin:0 0 0 5px;
+            @media (max-width: 500px) {
+              margin:0 0 0 2px;
+            }
+          }
+          .button_checked{
+            border:3px solid #191919;
+            img{
+
+              opacity: 0.5;
+            }
+          }
         }
       }
     }
