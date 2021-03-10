@@ -14,12 +14,12 @@
     var mediaMatch = window.matchMedia("(max-width: 980px)");
     if (mediaMatch.matches) {
       $('.l-header__main__background__text').show();
-    }else{
+    } else {
       $('.l-header__main__background__text').hide();
     }
-    var testHeight = $('.strength_text.current').outerHeight();
-    console.log(testHeight);
-    $('.strength_text_box').css('height',testHeight);
+    //var testHeight = $('.strength_text.current').outerHeight();
+    //console.log(testHeight);
+    //$('.strength_text_box').css('height', testHeight);
   });
 
   $('.introJs').addClass('display-intro');
@@ -31,7 +31,10 @@
       $('.introJs').addClass('display-block');
     }, 800);
     setTimeout(function() {
-      $('.l-header__main__background__text').css({'color':'black','z-index':'200'});
+      $('.l-header__main__background__text').css({
+        'color': 'black',
+        'z-index': '200'
+      });
     }, 950);
     setTimeout(function() {
       $('.introJs').removeClass('display-intro display-loaded');
@@ -82,52 +85,64 @@
       scrollTop: $($.attr(this, 'href')).offset().top - 80
     }, 500);
   });
-  $('.l-header__nav__hambugermenu__button').click(function(){
+  $('.l-header__nav__hambugermenu__button').click(function() {
     $('.l-header__nav__hambugermenu__button').toggleClass('open');
     $('body').toggleClass('menu_open');
-    $('.l-header__nav__hambugermenu').fadeToggle();
+    $('.l-header__nav__hambugermenu_wrapper').fadeToggle();
   });
 
-  $('.l-header__nav__hambugermenu ul li a').click(function(){
+  $('.l-header__nav__hambugermenu ul li a').click(function() {
     $('.l-header__nav__hambugermenu__button').click();
   });
 
-  $('.more_button').click(function(){
+  $('.more_button').click(function() {
     $('.p-main__project__contents_box_hide').fadeIn();
     $('.more_button').hide();
   });
 
-  $('.more_button_close').click(function(){
+  $('.more_button_close').click(function() {
     $('.p-main__project__contents_box_hide').fadeOut();
     $('.more_button').show();
   });
-  $('.strength_button_img').click(function(event){
-    var id = event.target.id;
+  /*
+  function slideTest(number) {
     var testHeight = $('.strength_text.current').outerHeight();
-    console.log(testHeight);
-    $('.strength_text_box').css('height',testHeight);
+    $('.strength_text_box').css('height', testHeight);
     $('.strength_img').hide();
     $('.strength_text').hide().removeClass('current');
     $('.strength_button').removeClass('button_checked');
+    $('.strength_button_img').removeClass('current_img');
     setTimeout(function() {
-      $('.img_'  + id).fadeIn();
-      $('.text_' + id).fadeIn().addClass('current');
-      $('.strength_button_' + id).addClass('button_checked');
+      $('.img_' + number).fadeIn().addClass('current_img');
+      $('.text_' + number).fadeIn().addClass('current');
+      $('.strength_button_' + number).addClass('button_checked');
+      $('.strength_button_img#' + number).addClass('current_img');
     }, 100);
-  });
-/*
-  $('.slick-dots').hide();
-  $('#01').click(function(){
-    $('#slick-slide-control10').click();
-  });
-  $('#02').click(function(){
-    $('#slick-slide-control11').click();
-  });
-  $('#03').click(function(){
-    $('#slick-slide-control12').click();
-  });
-  $('#04').click(function(){
-    $('#slick-slide-control13').click();
-  });
+  };
+    setInterval(function() {
+      var getButtonId = $('.strength_button_img.current_img').attr('id');
+      var slideNumber
+      if (getButtonId === '01') {
+        slideNumber = '02';
+      } else if (getButtonId === '02') {
+        slideNumber = '03';
+      } else if (getButtonId === '03') {
+        slideNumber = '04';
+      } else if (getButtonId === '04') {
+        slideNumber = '01';
+      }
+      slideTest(slideNumber);
+    }, 10000);
+
+    $('.strength_button_img').click(function(event) {
+      var buttonClickId = event.target.id;
+      slideTest(buttonClickId);
+    });
   */
+  $('.strength_button_img').click(function() {
+    var buttonClickId = event.target.id;
+    $('#slick-slide-control' + buttonClickId).click();
+    $('.strength_button').removeClass('button_checked');
+    $('.strength_button_' + buttonClickId).addClass('button_checked');
+  });
 })(jQuery);

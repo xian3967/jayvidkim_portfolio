@@ -135,7 +135,7 @@ body{
         }
       }
     }
-    .l-header__nav__hambugermenu{
+    .l-header__nav__hambugermenu_wrapper{
       position:fixed;
       width: 100%;
       height:100%;
@@ -145,48 +145,63 @@ body{
       bottom:0;
       display: none;
       z-index: 250;
-      background-color: #fff;
-      p{
-        position: absolute;
-        bottom: 10px;
-        font-size: 12px;
-        width: 100%;
-        text-align: center;
+      background-color: rgba(255,255,255, 0.9);
+      @media (min-width: 981px) {
+        display:none !important
       }
-      ul{
+      .l-header__nav__hambugermenu{
         padding: 0 20px;
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
         left: 50%;
-        li{
-          font-size:25px;
-          text-align: center;
-          font-weight: bold;
-          margin-bottom:20px;
-          width: 250px;
-          @media (max-width: 400px) {
+        width: 100%;
+        max-width: 70vw;
+        margin-left: 40px;
+        @media (max-width: 500px) {
+          margin-left: 0px;
+          max-width: 70vw;
+        }
+        @media (max-width: 400px) {
+          margin-left: 0px;
+          max-width: 85vw;
+        }
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          li{
+            font-size:5vw;
+            text-align: left;
+            margin-bottom:20px;
+            width: 250px;
+            width: 50%;
+            @media (max-width: 500px) {
+              font-size:6vw;
+              margin-bottom:20px;
+              width:100%;
+            }
+            @media (max-width: 400px) {
               font-size:7vw;
-              margin-bottom:15px;
-          }
-          a{
-            padding:0 30px;
-            display: block;
-            border-bottom: 1px solid #eee;
-            &:hover{
-              opacity: 0.6;
-              transition: 0.1s;
-              color:#25649f;
+            }
+            a{
+              padding: 5px 15px 5px 0;
+              border-bottom: 2px solid #000;
+              &:hover{
+                opacity: 0.6;
+                transition: 0.1s;
+                color:#25649f;
+              }
             }
           }
         }
-        li:last-child{
-          margin-bottom:0 !important;
-          a{
-            border: 3px solid #000;
-            margin-top: 30px;
-            cursor: pointer;
-          }
+        p{
+          margin-top: 30px;
+          font-size: 12px;
+          width: 100%;
+          text-align: left;
         }
       }
     }
