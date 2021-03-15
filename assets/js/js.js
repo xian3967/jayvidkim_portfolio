@@ -76,6 +76,13 @@
         });
       }
     });
+    if ($(window).scrollTop() > $('.p-main__contact_wrapper').offset().top - $(window).height() + 50) {
+      $('.localStorage_fixed').fadeOut();
+    } else if($(window).scrollTop() > $('.p-main__about_wrapper').offset().top - $(window).height() + 50) {
+      $('.localStorage_fixed').fadeIn();
+    } else{
+      $('.localStorage_fixed').fadeOut();
+    }
   });
 
   $(document).on('click', 'a[href^="#"]', function(event) {

@@ -1,4 +1,52 @@
 .p-main{
+  .localStorage_fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    z-index: 5;
+    background: #fff;
+    width:calc(100% - 20px);
+    max-width: 310px;
+    @include fzb(12);
+    padding: 12px 10px;
+    display: none;
+    color:#8a8a8a;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.24);
+    background: #FBFBFB;
+    border-radius: 6px;
+    &:before{
+      position: absolute;
+      bottom: -17px;
+      right: 20px;
+      content: '';
+      width: 1px;
+      height: 18px;
+      transform: rotate(-45deg);
+      box-shadow: 0 0 10px black;
+    }
+    &:after{
+      position: absolute;
+      bottom: -18px;
+      right: 20px;
+      content: '';
+      display: block;
+      border: 20px solid #FBFBFB;
+      border-top-width: 2px;
+      border-top-color: rgba(0, 0, 0, 0);
+      border-bottom-color: rgba(0, 0, 0, 0);
+      border-left-color: rgba(0, 0, 0, 0);
+    }
+    a{
+      position: relative;
+      color:#8a8a8a;
+      &:after{
+        color:#000;
+        content: "→";
+        position: absolute;
+        right: -15px;
+      }
+    }
+  }
   .fade_slide{
     transition: opacity 0.7s,transform 0.7s;
     -webkit-transition: opacity 0.7s,transform 0.7s;
@@ -29,48 +77,64 @@
         text-align: center;
         @include fz(20);
         color:$f9;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
+        @media (max-width: 900px) {
+          margin-bottom: 30px;
+        }
       }
       .p-main__about__contents{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         .img__wrapper{
-          width:50%;
+          text-align: right;
+          width: 55%;
           padding:0 50px 0 0;
-          border-right: 1px solid #f3f3f3;
-          @media (max-width: 767px) {
-            border-right: none;
-            border-bottom: 1px solid #f3f3f3;
+          position: relative;
+          @media (max-width: 900px) {
             width:100%;
-            padding:0 0 20px 0;
+            padding:0 0 25px 0;
             text-align: center;
           }
+          .p-main__about__contents_background{
+            background: #f0f0f0;
+            height: 120%;
+            width: 50%;
+            position: absolute;
+            top: -10%;
+            @media (max-width: 900px) {
+              display: none;
+            }
+          }
           .img{
-            width:100%;
+            width:60%;
             box-shadow: 0 7px 40px -7px rgba(25, 25, 25, 0.9);
-            max-width: 500px;
+            position: relative;
+            @media (max-width: 900px) {
+              width:60%;
+            }
+            @media (max-width: 767px) {
+              width:100%;
+            }
           }
         }
         .text__wrapper{
-          width:50%;
-          padding:0 0 0 50px;
-          @media (max-width: 767px) {
+          width:45%;
+          @media (max-width: 900px) {
             width:100%;
-            padding:20px 0 0 0;
           }
           .text__headding{
             @include fz(14);
             color:$f9;
             letter-spacing: 1px;
-            @media (max-width: 767px) {
+            @media (max-width: 900px) {
               @include fz(14);
             }
             span{
               @include fzb(30);
               color:$black;
               letter-spacing: 5px;
-              @media (max-width: 767px) {
+              @media (max-width: 900px) {
                 @include fzb(24);
               }
             }
@@ -92,14 +156,129 @@
       }
     }
   }
+  .p-main__profile{
+    margin-top: 150px;
+    background:$white;
+    .p-main__profile_wrapper{
+      margin:0 auto;
+      width:100%;
+      max-width: 1200px;
+      padding: 0 3%;
+      .p-main__profile__title{
+        text-align: center;
+        letter-spacing: 3px;
+        @include fzb(32);
+        line-height: 3.2rem;
+      }
+      .p-main__profile__subtitle{
+        text-align: center;
+        @include fz(20);
+        color:$f9;
+        margin-bottom: 80px;
+        @media (max-width: 900px) {
+          margin-bottom: 30px;
+        }
+      }
+      .p-main__profile_box{
+        position: relative;
+        .p-main__profile_background{
+          background: #f0f0f0;
+          height: 120%;
+          width: 28%;
+          position: absolute;
+          top: -10%;
+          right: 0;
+          z-index: 1;
+          @media (max-width: 900px) {
+            display: none;
+          }
+        }
+        .p-main__profile_contents{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          box-shadow: 0 14px 54px rgba(0, 0, 0, 0.22);
+          width: 85%;
+          z-index: 2;
+          position: relative;
+          padding: 30px;
+          background: #fff;
+          @media (max-width: 900px) {
+            width: 100%;
+            padding:0;
+            box-shadow:none;
+          }
+          .img__wrapper{
+            text-align: right;
+            width: 40%;
+            padding: 0 0 0 25px;
+            position: relative;
+            @media (max-width: 900px) {
+              display: none;
+            }
+            .img{
+              width: 100%;
+              max-width: 250px;
+              box-shadow: 0 7px 40px -7px rgba(25, 25, 25, 0.9);
+              position: relative;
+              @media (max-width: 900px) {
+                width:60%;
+              }
+              @media (max-width: 767px) {
+                width:100%;
+              }
+            }
+          }
+          .text__wrapper{
+            width:60%;
+            padding:0 0 0 25px;
+            @media (max-width: 900px) {
+              width:100%;
+              padding:0;
+            }
+            .text__headding{
+              @include fz(14);
+              color:$f9;
+              letter-spacing: 1px;
+              @media (max-width: 900px) {
+                @include fz(14);
+              }
+              span{
+                @include fzb(30);
+                color:$black;
+                letter-spacing: 5px;
+                @media (max-width: 900px) {
+                  @include fzb(24);
+                }
+              }
+            }
+            .text__subheadding{
+              @include fz(14);
+              color:$black;
+            }
+            .text__description{
+              @include fz(14);
+              color:#333;
+              margin-top:20px;
+              span{
+                color:$black;
+                @include fzb(20);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .p-main__contact{
-    margin-top:100px;
+    margin-top:150px;
     background: url('../images/section_contact_img_01.jpg') center;
     background-size: cover;
     .p-main__contact_wrapper{
       margin:0 auto;
       width:100%;
-      max-width: 1400px;
+      max-width: 1200px;
       padding:0 3%;
       .p-main__contact__title{
         padding:100px 0 10px;
@@ -152,7 +331,7 @@
     max-width: 1200px;
     .p-main__skill__title{
       letter-spacing: 3px;
-      padding:30px 0 0px;
+      padding:60px 0 0px;
       text-align: center;
       letter-spacing: 3px;
       @include fzb(32);
@@ -333,7 +512,6 @@
   .p-main__strength{
   margin-top: 100px;
   width:100%;
-  background:#f3f3f3;
   background-size: cover;
   padding:50px 0 80px 0;
   .p-main__strength_wrapper{
@@ -371,7 +549,6 @@
           .flex_right{
             width:47%;
             margin-left:3%;
-            background: #f3f3f3;
             position:relative;
             @media (max-width: 767px) {
               width: 100%;
