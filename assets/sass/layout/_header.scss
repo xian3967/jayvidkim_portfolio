@@ -32,12 +32,15 @@ body{
       }
       .l-header__nav__menu__wrapper{
         float: right;
-        @media (max-width: 980px) {
+        @media (max-width: 900px) {
             display: none;
         }
         ul{
           display: flex;
           margin: 20px 50px 0 0;
+          @media (max-width: 980px) {
+            margin: 15px 20px 0 0;
+          }
           li{
             a{
               cursor: pointer;
@@ -71,7 +74,7 @@ body{
         display:none;
         padding-top: 12px;
         padding-right: 15px;
-        @media (max-width: 980px) {
+        @media (max-width: 900px) {
             display: block;
         }
         ul{
@@ -146,7 +149,7 @@ body{
       display: none;
       z-index: 250;
       background-color: rgba(255,255,255, 0.9);
-      @media (min-width: 981px) {
+      @media (min-width: 901px) {
         display:none !important
       }
       .l-header__nav__hambugermenu{
@@ -251,7 +254,7 @@ body{
         right: 30px;
         bottom:95px;
         z-index: 200;
-        @media (max-width: 980px) {
+        @media (max-width: 900px) {
           right:auto;
           left:50%;
           transform: translateX(-50%);
@@ -314,7 +317,7 @@ body{
           background: url('../images/section_project_img_03.jpg') no-repeat top center fixed;
           background-size: cover;
         }
-        @media (max-width: 980px) {
+        @media (max-width: 900px) {
           .l-header__main__background__img__01{
             background: url('../images/main.jpg') no-repeat top center scroll;
             background-size: cover;
@@ -341,7 +344,7 @@ body{
         height:100%;
         transition: 0.5s;
         background: $white;
-        @media (max-width: 980px) {
+        @media (max-width: 900px) {
             display: none;
         }
         .l-header__main__title{

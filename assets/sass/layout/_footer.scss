@@ -1,20 +1,206 @@
 .l-footer{
-    background:$black;
+  margin-top:180px;
+  background: url('../images/section_contact_img_01.jpg') center;
+  background-size: cover;
+  @media (max-width: 767px) {
+    margin-top: 100px;
+  }
+  .l-footer__wrapper{
+    margin:0 auto;
     width:100%;
-    .l-footer__wrapper{
-      margin:0 auto;
+    max-width: 1200px;
+    padding:0 3%;
+    .l-footer__title{
+      padding:60px 0 0;
+      text-align: center;
+      @include fzb(40);
+      color:$white;
+      line-height: 50px;
+    }
+    .l-footer__subtitle{
+      text-align: center;
+      margin-bottom: 40px;
+      @include fz(18);
+      color:#909090;
+    }
+    .l-footer__contents_box{
       width:100%;
-      max-width: 1200;
-      padding:0 3%;
-      .l-footer__text_box{
-        p:nth-child(1){
-          color:$white;
-          @include fz(12);
-          padding-bottom: 5px;
-          padding-top: 5px;
-          text-align: center;
-          letter-spacing: 1.5px;
+      padding-bottom: 100px;
+      .l-footer__contents{
+        display: flex;
+        flex-wrap: wrap;
+        .l-footer__contents_left{
+          width: 40%;
+          @media (max-width: 767px) {
+            width:100%;
+          }
+          h3{
+            color:#fff;
+            @include fzb(22);
+            margin-bottom: 10px;
+          }
+          .l-footer__contents_left_text{
+            margin-bottom: 10px;
+            color:#fff;
+            @include fz(16);
+          }
+          .l-footer__contents_left_text:nth-child(1){
+            margin-bottom: 20px;
+          }
+          .contact__button{
+            width: 100%;
+            padding:30px 0;
+            a{
+              border: 2px solid #fff;
+              color: #fff;
+              padding: 10px 20px;
+              @include fzb(20);
+              &:hover{
+                border: 2px solid $f9;
+                color:$f9;
+              }
+            }
+          }
+        }
+        .l-footer__contents_right{
+          width: 60%;
+          @media (max-width: 767px) {
+            width:100%;
+          }
+          h3{
+            color:#fff;
+            @include fzb(22);
+            margin-bottom: 10px;
+          }
+          .l-footer__form{
+            .l-footer__form_box_upper{
+              display: flex;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              .l-footer__form_box_upper_content{
+                width: 50%;
+                padding-right: 15px;
+                .form-group{
+                  color: #fff;
+                  padding-bottom: 20px;
+                  position: relative;
+                  label{
+                    @include fz(12);
+                    font-weight: 600;
+                  }
+                  .form-control{
+                    margin-top: 10px;
+                    border: .2rem solid #fff;
+                    border-radius: .3rem;
+                    transition: .3s;
+                    transform-style: preserve-3d;
+                    -webkit-appearance: none;
+                    background-color: #fff;
+                    outline: none !important;
+                    width: 100%;
+                    height: inherit;
+                    padding: 1.5rem;
+                    background-color: transparent;
+                    border-color: rgba(255, 255, 255, .6);
+                    color: #fff;
+                    @include fz(14);
+                    box-shadow: none;
+                  }
+                }
+              }
+              .l-footer__form_box_upper_content:nth-child(2){
+                padding-left: 15px;
+                padding-right: 0;
+              }
+            }
+            .l-footer__form_box_lower{
+              width: 100%;
+              .l-footer__form_box_lower_content{
+                width: 100%;
+                .form-group{
+                  color: #fff;
+                  padding-bottom: 20px;
+                  position: relative;
+                  label{
+                    @include fz(12);
+                    font-weight: 600;
+                  }
+                  .form-control{
+                    margin-top: 10px;
+                    border: .2rem solid #fff;
+                    border-radius: .3rem;
+                    transition: .3s;
+                    transform-style: preserve-3d;
+                    -webkit-appearance: none;
+                    background-color: #fff;
+                    outline: none !important;
+                    width: 100%;
+                    height: inherit;
+                    padding: 1.5rem;
+                    background-color: transparent;
+                    border-color: rgba(255, 255, 255, .6);
+                    color: #fff;
+                    @include fz(14);
+                    box-shadow: none;
+                  }
+                  textarea{
+                    &::-webkit-scrollbar {
+                      width: 8px;
+                      height: 8px;
+                    }
+                    &::-webkit-scrollbar-button {
+                      width: 0px;
+                      height: 0px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                      background: #666666;
+                      border: 1px inset #000000;
+                      border-radius: 0;
+                    }
+                    &::-webkit-scrollbar-thumb:hover {
+                      background: #333333;
+                    }
+                    &::-webkit-scrollbar-thumb:active {
+                      background: #333333;
+                    }
+                    &::-webkit-scrollbar-track {
+                      background: #000000;
+                      border: 0px none #ffffff;
+                      border-radius: 0;
+                    }
+                    &::-webkit-scrollbar-track:hover {
+                      background: #000000;
+                    }
+                    &::-webkit-scrollbar-track:active {
+                      background: #000000;
+                    }
+                    &::-webkit-scrollbar-corner {
+                      background: transparent;
+                    }
+                  }
+                }
+              }
+            }
+            .l-footer__form_box_button{
+              .form-group{
+                text-align: right;
+                button{
+                  display: inline-block;
+                  position: relative;
+                  transition: .3s ease;
+                  color: #252525;
+                  @include fzb(14);
+                  border-radius: .2rem;
+                  padding: 1.4rem 1.6rem 1.3rem 1.6rem;
+                  border: none;
+                  outline: none !important;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
         }
       }
     }
+  }
 }
