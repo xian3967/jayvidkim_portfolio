@@ -1,7 +1,11 @@
 .l-footer{
   margin-top:180px;
-  background: url('../images/section_contact_img_01.jpg') center;
+  background: url('../images/section_contact_img_03.jpg') center fixed;
   background-size: cover;
+  @media (max-width: 900px) {
+    background: url('../images/section_contact_img_03sp.jpg') center scroll;
+    background-size: cover;
+  }
   @media (max-width: 767px) {
     margin-top: 100px;
   }
@@ -14,14 +18,14 @@
       padding:60px 0 0;
       text-align: center;
       @include fzb(40);
-      color:$white;
+      color:$black;
       line-height: 50px;
     }
     .l-footer__subtitle{
       text-align: center;
       margin-bottom: 40px;
       @include fz(18);
-      color:#909090;
+      color:$f9;
     }
     .l-footer__contents_box{
       width:100%;
@@ -35,14 +39,14 @@
             width:100%;
           }
           h3{
-            color:#fff;
+            color:$black;
             @include fzb(22);
             margin-bottom: 10px;
           }
           .l-footer__contents_left_text{
             margin-bottom: 10px;
-            color:#fff;
-            @include fz(16);
+            color:$black;
+            @include fzb(16);
           }
           .l-footer__contents_left_text:nth-child(1){
             margin-bottom: 20px;
@@ -51,8 +55,8 @@
             width: 100%;
             padding:30px 0;
             a{
-              border: 2px solid #fff;
-              color: #fff;
+              border: 2px solid $black;
+              color: $black;
               padding: 10px 20px;
               @include fzb(20);
               &:hover{
@@ -68,7 +72,7 @@
             width:100%;
           }
           h3{
-            color:#fff;
+            color:$black;
             @include fzb(22);
             margin-bottom: 10px;
           }
@@ -81,29 +85,29 @@
                 width: 50%;
                 padding-right: 15px;
                 .form-group{
-                  color: #fff;
+                  color: $black;
                   padding-bottom: 20px;
                   position: relative;
                   label{
-                    @include fz(12);
+                    @include fzlb(14);
                     font-weight: 600;
                   }
                   .form-control{
                     margin-top: 10px;
-                    border: .2rem solid #fff;
+                    border: .2rem solid $black;
                     border-radius: .3rem;
                     transition: .3s;
                     transform-style: preserve-3d;
                     -webkit-appearance: none;
-                    background-color: #fff;
+                    background-color: $black;
                     outline: none !important;
                     width: 100%;
                     height: inherit;
                     padding: 1.5rem;
                     background-color: transparent;
-                    border-color: rgba(255, 255, 255, .6);
-                    color: #fff;
-                    @include fz(14);
+                    border-color: rgba(0, 0, 0, .6);
+                    color: $black;
+                    @include fzlb(14);
                     box-shadow: none;
                   }
                 }
@@ -118,65 +122,32 @@
               .l-footer__form_box_lower_content{
                 width: 100%;
                 .form-group{
-                  color: #fff;
+                  color: $black;
                   padding-bottom: 20px;
                   position: relative;
                   label{
-                    @include fz(12);
+                    @include fz(14);
                     font-weight: 600;
                   }
                   .form-control{
                     margin-top: 10px;
-                    border: .2rem solid #fff;
+                    border: .2rem solid $black;
                     border-radius: .3rem;
                     transition: .3s;
                     transform-style: preserve-3d;
                     -webkit-appearance: none;
-                    background-color: #fff;
+                    background-color: $black;
                     outline: none !important;
                     width: 100%;
                     height: inherit;
                     padding: 1.5rem;
                     background-color: transparent;
-                    border-color: rgba(255, 255, 255, .6);
-                    color: #fff;
-                    @include fz(14);
+                    border-color: rgba(0, 0, 0 , .6);
+                    color: $black;
+                    @include fzlb(14);
                     box-shadow: none;
                   }
                   textarea{
-                    &::-webkit-scrollbar {
-                      width: 8px;
-                      height: 8px;
-                    }
-                    &::-webkit-scrollbar-button {
-                      width: 0px;
-                      height: 0px;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                      background: #666666;
-                      border: 1px inset #000000;
-                      border-radius: 0;
-                    }
-                    &::-webkit-scrollbar-thumb:hover {
-                      background: #333333;
-                    }
-                    &::-webkit-scrollbar-thumb:active {
-                      background: #333333;
-                    }
-                    &::-webkit-scrollbar-track {
-                      background: #000000;
-                      border: 0px none #ffffff;
-                      border-radius: 0;
-                    }
-                    &::-webkit-scrollbar-track:hover {
-                      background: #000000;
-                    }
-                    &::-webkit-scrollbar-track:active {
-                      background: #000000;
-                    }
-                    &::-webkit-scrollbar-corner {
-                      background: transparent;
-                    }
                   }
                 }
               }
@@ -185,10 +156,11 @@
               .form-group{
                 text-align: right;
                 button{
+                  font-family: Circular Std,sans-serif;
                   display: inline-block;
                   position: relative;
                   transition: .3s ease;
-                  color: #252525;
+                  color: $f13;
                   @include fzb(14);
                   border-radius: .2rem;
                   padding: 1.4rem 1.6rem 1.3rem 1.6rem;

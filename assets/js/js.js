@@ -111,6 +111,9 @@
   $('.more_button_close').click(function() {
     $('.p-main__project__contents_box_hide').fadeOut();
     $('.more_button').show();
+    $('html, body').animate({
+      scrollTop: $('#anc_10').offset().top - 600
+    }, 500);
   });
   /*
   function slideTest(number) {

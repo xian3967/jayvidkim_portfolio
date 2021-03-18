@@ -63,6 +63,36 @@
 .u-ffHKS {
     font-family: "ヒラギノ角ゴ Std W8","Hiragino Kaku Gothic Std", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+
+.noto{
+  font-family: 'Noto Serif JP', serif;
+}
+
+
+
+@font-face {
+    src:url('../font/RNSSanz-Light.ttf');
+    font-family: 'rns_light';
+}
+@font-face {
+    src:url('../font/RNSSanz-Medium.ttf');
+    font-family: 'rns_medium';
+}
+@font-face {
+    src:url('../font/RNSSanz-Bold.ttf');
+    font-family: 'rns_bold';
+}
 .circular{
     font-family: Circular Std,sans-serif;
+}
+.rns_light{
+  font-family: 'rns_light',sans-serif;
+}
+.rns_medium{
+  font-family: 'rns_medium',sans-serif;
+}
+.rns_bold{
+  font-family: 'rns_bold',sans-serif;
 }

@@ -4,7 +4,7 @@
     right: 10px;
     bottom: 40px;
     z-index: 5;
-    background: #fff;
+    background: $white;
     width:calc(100% - 20px);
     max-width: 310px;
     @include fzb(12);
@@ -80,7 +80,7 @@
         text-align: center;
         @include fz(20);
         color:$f9;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         @media (max-width: 767px) {
           margin-bottom: 30px;
         }
@@ -100,7 +100,7 @@
             text-align: center;
           }
           .p-main__about__contents_background{
-            background: #f3f3f3;
+            background: url('../images/section_skills_img_03.jpg') center;
             height: 120%;
             width: 50%;
             position: absolute;
@@ -126,11 +126,11 @@
             width:100%;
           }
           .text__headding{
-            @include fz(14);
+            @include fzlb(14);
             color:$f9;
             letter-spacing: 1px;
             @media (max-width: 767px) {
-              @include fz(14);
+              @include fzlb(14);
             }
             span{
               @include fzb(30);
@@ -142,11 +142,11 @@
             }
           }
           .text__subheadding{
-            @include fz(14);
+            @include fzlb(14);
             color:$black;
           }
           .text__description{
-            @include fz(14);
+            @include fzlb(14);
             color:#333;
             margin-top:20px;
             span{
@@ -161,11 +161,13 @@
   .p-main__skill{
   margin-top: 150px;
   width:100%;
-  background: url('../images/section_skills_img_01.jpg') center;
+  background: url('../images/section_skills_img_01.jpg') center fixed;
   background-size: cover;
   padding:0 3%;
   @media (max-width: 767px) {
     margin-top: 60px;
+    background: url('../images/section_skills_img_01.jpg') center scroll;
+    background-size: cover;
   }
   .p-main__skill_wrapper{
     margin:0 auto;
@@ -225,7 +227,7 @@
         }
         p{
           color:#333;
-          @include fz(14);
+          @include fzlb(14);
         }
       }
     }
@@ -252,7 +254,7 @@
         text-align: center;
         @include fz(20);
         color:$f9;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         @media (max-width: 767px) {
           margin-bottom: 30px;
         }
@@ -260,7 +262,7 @@
       .p-main__career_box{
         position: relative;
         .p-main__career_background{
-          background: #f3f3f3;
+          background: url('../images/section_skills_img_03.jpg') center;
           height: 130%;
           width: 28%;
           position: absolute;
@@ -291,7 +293,7 @@
           z-index: 2;
           position: relative;
           padding: 30px;
-          background: #fff;
+          background: $white;
           @media (max-width: 767px) {
             width: 100%;
             padding:20px;
@@ -341,15 +343,14 @@
                 li{
                   text-align: center;
                   width: 50%;
-                  @include fz(14);
+                  @include fzlb(14);
                   padding-bottom: 5px;
                   padding-right: 10px;
-                  border-bottom: 1px solid #909090;
+                  border-bottom: 1px solid $f9;
                   cursor:pointer;
                   &:hover{
                     opacity: 0.6;
                     transition: 0.1s;
-                    color:#25649f;
                   }
                 }
                 li:nth-child(2){
@@ -370,18 +371,24 @@
                 @include fzb(24);
               }
               @media (max-width: 767px) {
-                @include fz(14);
+                @include fzb(14);
               }
             }
             .text__subheadding{
-              @include fz(14);
+              @include fzlb(14);
               color:$f9;
               margin-bottom: 20px;
             }
             .career__left__tab{
               padding-top: 10px;
+              padding-left: 10px;
+              padding-right: 10px;
+              @media (max-width: 767px) {
+                padding-left: 5px;
+                padding-right: 5px;
+              }
               .career__tab_text{
-                @include fz(14);
+                @include fzlb(14);
                 color:#333;
                 span{
                   color:$black;
@@ -401,7 +408,7 @@
   margin-top: 180px;
   width:100%;
   padding:60px 3%;
-  background: #f3f3f3;
+  background: url('../images/section_skills_img_03.jpg') center fixed;
   @media (max-width: 767px) {
     margin-top: 60px;
   }
@@ -437,11 +444,12 @@
           display: block;
           background: #333;
           padding: 10px;
-          color: #fff;
+          color: $white;
           @include fz(14);
           position: relative;
           text-align: center;
           cursor: pointer;
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
           &:hover{
             opacity: 0.7;
           }
@@ -473,18 +481,19 @@
             width:100%;
             a{
               width: 100%;
-              margin:10px 0;
+              margin:15px 0;
               display: block;
               background: #333;
               padding: 10px;
-              color: #fff;
+              color: $white;
               @include fz(14);
               position: relative;
               text-align: center;
+              box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
               &:after{
                 content: '>';
                 position: absolute;
-                color: #fff;
+                color: $white;
                 top: 9px;
                 right: 10px;
               }
@@ -512,8 +521,8 @@
             @include fzb(20);
           }
           p{
-            @include fzb(14);
-            color:#333;
+            @include fzlb(14);
+            color:$f13;
           }
         }
       }
@@ -534,7 +543,7 @@
     .p-main__faq_slide_wrapper{
       position: relative;
       .p-main__faq_slide_background{
-        background: #f3f3f3;
+        background: url('../images/section_skills_img_03.jpg') center;
         height: 130%;
         width: 28%;
         position: absolute;
@@ -592,12 +601,12 @@
                 .faq_text{
                   h3{
                     color:$black;
-                    @include fzb(26);
+                    @include fzb(22);
                   }
                   p{
                     color:#333;
                     margin-top:10px;
-                    @include fz(14);
+                    @include fzlb(14);
                   }
                 }
               }
@@ -619,9 +628,27 @@
         }
         .slick-next{
           right:20px;
+          &:before{
+            background: url('../images/arrow_right.png');
+            width: 15px;
+            height: 23px;
+            position: absolute;
+            top: -15px;
+            right: -5px;
+            content: '';
+          }
         }
         .slick-prev{
           left:20px;
+          &:before{
+            background: url('../images/arrow_left.png');
+            width: 15px;
+            height: 23px;
+            position: absolute;
+            top: -15px;
+            left: -5px;
+            content: '';
+          }
         }
         .slick-dots{
           opacity:0;
@@ -643,7 +670,7 @@
       .faq_button{
         width:25%;
         margin:0 5px;
-        border:3px solid #f3f3f3;
+        border:3px solid $f12;
         overflow: hidden;
         transition: 0.5s;
         position: relative;
@@ -692,7 +719,10 @@
       text-align: center;
       @include fz(20);
       color:$f9;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
     }
   }
   }

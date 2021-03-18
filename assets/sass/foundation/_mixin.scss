@@ -163,6 +163,11 @@
   font-size: $size + px;
   font-size: ($size / 10)  + rem;
 }
+@mixin fzlb($size: 14) {
+  font-size: $size + px;
+  font-size: ($size / 10)  + rem;
+  font-weight: 500;
+}
 @mixin fzb($size: 14) {
   font-size: $size + px;
   font-size: ($size / 10)  + rem;
