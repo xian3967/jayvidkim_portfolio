@@ -104,57 +104,41 @@
   });
 
   $('.more_button').click(function() {
-    $('.p-main__project__contents_box_hide').fadeIn();
+    $('.p-main__project__contents__box__hide').fadeIn();
     $('.more_button').hide();
   });
 
   $('.more_button_close').click(function() {
-    $('.p-main__project__contents_box_hide').fadeOut();
+    $('.p-main__project__contents__box__hide').fadeOut();
     $('.more_button').show();
     $('html, body').animate({
       scrollTop: $('#anc_10').offset().top - 600
     }, 500);
   });
-  /*
-  function slideTest(number) {
-    var testHeight = $('.faq_text.current').outerHeight();
-    $('.faq_text_box').css('height', testHeight);
-    $('.faq_img').hide();
-    $('.faq_text').hide().removeClass('current');
-    $('.faq_button').removeClass('button_checked');
-    $('.faq_button_img').removeClass('current_img');
-    setTimeout(function() {
-      $('.img_' + number).fadeIn().addClass('current_img');
-      $('.text_' + number).fadeIn().addClass('current');
-      $('.faq_button_' + number).addClass('button_checked');
-      $('.faq_button_img#' + number).addClass('current_img');
-    }, 100);
-  };
-  */
-  $('.faq_button_img').click(function() {
+  $('.faq__button__img').click(function() {
     var buttonClickId = event.target.id;
     $('#slick-slide-control' + buttonClickId).click();
-    $('.faq_button').removeClass('button_checked');
-    $('.faq_button_' + buttonClickId).addClass('button_checked');
+    $('.faq__button').removeClass('button_checked');
+    $('.faq__button_' + buttonClickId).addClass('button_checked');
   });
 
-  $('.career_button').click(function() {
+  $('.career__button').click(function() {
     careerTabHeight();
     var careerButtonClickId = event.target.id;
-    $('.career__tab_text').hide().removeClass('current');
-    $('.career__tab_img').hide().removeClass('current');
-    $('.career_button').removeClass('selected');
+    $('.career__tab__text').hide().removeClass('current');
+    $('.career__tab__img').hide().removeClass('current');
+    $('.career__button').removeClass('selected');
     setTimeout(function() {
-      $('.career__tab_img_' + careerButtonClickId).fadeIn().addClass('current');
-      $('.career__tab_text_' + careerButtonClickId).fadeIn().addClass('current');
-      $('.career_button#' + careerButtonClickId).addClass('selected');
+      $('.career__tab__img__' + careerButtonClickId).fadeIn().addClass('current');
+      $('.career__tab__text__' + careerButtonClickId).fadeIn().addClass('current');
+      $('.career__button#' + careerButtonClickId).addClass('selected');
       careerTabHeight();
     }, 50);
   });
 
   function careerTabHeight(){
-    var tabRightHeight = $('.career__tab_img.current').outerHeight();
-    var tabLeftHeight = $('.career__tab_text.current').outerHeight();
+    var tabRightHeight = $('.career__tab__img.current').outerHeight();
+    var tabLeftHeight = $('.career__tab__text.current').outerHeight();
     $('.career__right__tab').css('height', tabRightHeight);
     $('.career__left__tab').css('height', tabLeftHeight);
   };
