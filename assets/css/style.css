@@ -697,30 +697,20 @@ body {
     height: 100vh;
     position: relative; }
   .l-header .l-header__main .l-header__main__background .l-header__main__background__slick .l-header__main__background__img__01 {
-    background: url("../images/main.jpg") no-repeat top center fixed;
-    background-size: cover; }
-  .l-header .l-header__main .l-header__main__background .l-header__main__background__slick .l-header__main__background__img__02 {
-    background: url("../images/section_project_img_05.jpg") no-repeat top center fixed;
-    background-size: cover; }
-  .l-header .l-header__main .l-header__main__background .l-header__main__background__slick .l-header__main__background__img__03 {
-    background: url("../images/section_project_img_03.jpg") no-repeat top center fixed;
-    background-size: cover; }
+    background: url("../images/main_05.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: grayscale(0.5); }
   @media (max-width: 900px) {
     .l-header .l-header__main .l-header__main__background .l-header__main__background__slick .l-header__main__background__img__01 {
-      background: url("../images/main.jpg") no-repeat top center scroll;
-      background-size: cover; }
-    .l-header .l-header__main .l-header__main__background .l-header__main__background__slick .l-header__main__background__img__02 {
-      background: url("../images/section_project_img_05.jpg") no-repeat top center scroll;
-      background-size: cover; }
-    .l-header .l-header__main .l-header__main__background .l-header__main__background__slick .l-header__main__background__img__03 {
-      background: url("../images/section_project_img_03.jpg") no-repeat top center scroll;
-      background-size: cover; } }
+      background: url("../images/main_05.jpg") no-repeat top center scroll;
+      background-size: cover;
+      filter: grayscale(0.5); } }
 .l-header .l-header__main .l-header__main__contents .l-header__main__side-menu {
   position: absolute;
   right: -550px;
   top: 0;
-  width: 30vw;
-  max-width: 450px;
+  width: 100%;
+  max-width: 400px;
   height: 100%;
   transition: 0.5s;
   background: #fff; }
@@ -737,9 +727,9 @@ body {
     padding-right: 20px;
     width: 100%; }
     .l-header .l-header__main .l-header__main__contents .l-header__main__side-menu .l-header__main__title h1 {
-      font-size: 1.3vw; }
+      font-size: 20px; }
       .l-header .l-header__main .l-header__main__contents .l-header__main__side-menu .l-header__main__title h1 span {
-        font-size: 2.3vw;
+        font-size: 38px;
         font-weight: bold; }
   .l-header .l-header__main .l-header__main__contents .l-header__main__side-menu .l-header__main__img {
     display: none;
@@ -755,7 +745,8 @@ body {
     .l-header .l-header__main .l-header__main__contents .l-header__main__side-menu .l-header__main__img img {
       width: 100%;
       max-width: 350px;
-      box-shadow: 0 3px 20px -2px rgba(25, 25, 25, 0.3); }
+      box-shadow: 0 3px 20px -2px rgba(25, 25, 25, 0.3);
+      filter: grayscale(0.6); }
 .l-header .l-header__main .l-header__main__contents .l-header__main__side-menu_open {
   right: 0; }
 .l-header .l-header__main .l-header__main__contents .l-header__intro .intro, .l-header .l-header__main .l-header__main__contents .l-header__intro .transition {
@@ -1078,10 +1069,14 @@ body {
         width: 55%;
         padding: 0 50px 0 0;
         position: relative; }
+        @media (max-width: 900px) {
+          .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper {
+            width: 50%;
+            padding: 0 30px 0 0; } }
         @media (max-width: 767px) {
           .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper {
             width: 100%;
-            padding: 0 0 25px 0;
+            padding: 0 0 20px 0;
             text-align: center; } }
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper .p-main__about__contents__background {
           background: url("../images/section_skills_img_02.jpg") center;
@@ -1094,67 +1089,80 @@ body {
             .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper .p-main__about__contents__background {
               display: none; } }
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper .img {
-          width: 60%;
-          box-shadow: 0 7px 40px -7px rgba(25, 25, 25, 0.9);
-          position: relative; }
+          width: 70%;
+          box-shadow: 0 3px 20px -2px rgba(25, 25, 25, 0.3);
+          position: relative;
+          filter: grayscale(0.2); }
+          @media (max-width: 1050px) {
+            .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper .img {
+              width: 80%; } }
+          @media (max-width: 900px) {
+            .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper .img {
+              width: 95%; } }
           @media (max-width: 767px) {
             .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .img__wrapper .img {
-              width: 100%;
-              max-width: 480px; } }
+              width: 100%; } }
       .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper {
         width: 45%; }
+        @media (max-width: 900px) {
+          .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper {
+            width: 50%; } }
         @media (max-width: 767px) {
           .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper {
             width: 100%; } }
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding {
-          font-size: 14px;
-          font-size: 1.4rem;
+          font-size: 15px;
+          font-size: 1.5rem;
           font-weight: 500;
           color: #909090;
           letter-spacing: 1px; }
-          @media (max-width: 767px) {
+          @media (max-width: 900px) {
             .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding {
               font-size: 14px;
               font-size: 1.4rem;
               font-weight: 500; } }
           .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding span {
-            font-size: 30px;
-            font-size: 3rem;
+            font-size: 24px;
+            font-size: 2.4rem;
             font-weight: bold;
             color: #000;
             letter-spacing: 5px; }
-            @media (max-width: 767px) {
+            @media (max-width: 900px) {
               .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding span {
-                font-size: 24px;
-                font-size: 2.4rem;
+                font-size: 22px;
+                font-size: 2.2rem;
                 font-weight: bold; } }
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__subheadding {
-          font-size: 14px;
-          font-size: 1.4rem;
+          font-size: 15px;
+          font-size: 1.5rem;
           font-weight: 500;
           color: #000; }
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__description {
-          font-size: 14px;
-          font-size: 1.4rem;
+          font-size: 15px;
+          font-size: 1.5rem;
           font-weight: 500;
           color: #333;
           margin-top: 20px; }
+          @media (max-width: 900px) {
+            .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__description {
+              margin-top: 10px;
+              font-size: 14px;
+              font-size: 1.4rem;
+              font-weight: 500; } }
           .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__description span {
             color: #000;
-            font-size: 20px;
-            font-size: 2rem;
+            font-size: 18px;
+            font-size: 1.8rem;
             font-weight: bold; }
 .p-main .p-main__skill {
   margin-top: 150px;
   width: 100%;
-  background: url("../images/main_03.jpg") center fixed;
+  background: url("../images/section_skills_img_02.jpg") center fixed;
   background-size: cover;
   padding: 0 3%; }
   @media (max-width: 767px) {
     .p-main .p-main__skill {
-      margin-top: 60px;
-      background: url("../images/main_03sp.jpg") center scroll;
-      background-size: cover; } }
+      margin-top: 60px; } }
   .p-main .p-main__skill .p-main__skill_wrapper {
     margin: 0 auto;
     width: 100%;
@@ -1206,18 +1214,28 @@ body {
               border-bottom: none; } }
         .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents h3 {
           color: #000;
-          font-size: 26px;
-          font-size: 2.6rem;
+          font-size: 22px;
+          font-size: 2.2rem;
           font-weight: bold; }
+          @media (max-width: 900px) {
+            .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents h3 {
+              font-size: 18px;
+              font-size: 1.8rem;
+              font-weight: bold; } }
         .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents p {
           color: #333;
-          font-size: 14px;
-          font-size: 1.4rem;
+          font-size: 15px;
+          font-size: 1.5rem;
           font-weight: 500; }
+          @media (max-width: 900px) {
+            .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents p {
+              font-size: 14px;
+              font-size: 1.4rem;
+              font-weight: 500; } }
 .p-main .p-main__career {
   margin-top: 100px;
   background: #fff; }
-  @media (max-width: 767px) {
+  @media (max-width: 900px) {
     .p-main .p-main__career {
       margin-top: 60px; } }
   .p-main .p-main__career .p-main__career__wrapper {
@@ -1238,7 +1256,7 @@ body {
       font-size: 2rem;
       color: #909090;
       margin-bottom: 60px; }
-      @media (max-width: 767px) {
+      @media (max-width: 900px) {
         .p-main .p-main__career .p-main__career__wrapper .p-main__career__subtitle {
           margin-bottom: 30px; } }
     .p-main .p-main__career .p-main__career__wrapper .p-main__career__box {
@@ -1252,7 +1270,7 @@ body {
         right: 0;
         z-index: 1;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
-        @media (max-width: 767px) {
+        @media (max-width: 900px) {
           .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__background {
             display: none; } }
         .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__background ul {
@@ -1267,13 +1285,19 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 30px;
-        box-shadow: 0 14px 54px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 3px 20px -2px rgba(25, 25, 25, 0.3);
         width: 85%;
         z-index: 2;
         position: relative;
         padding: 30px;
         background: #fff; }
-        @media (max-width: 767px) {
+        @media (max-width: 1100px) {
+          .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents {
+            width: 90%; } }
+        @media (max-width: 1000px) {
+          .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents {
+            width: 95%; } }
+        @media (max-width: 900px) {
           .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents {
             width: 100%;
             padding: 20px; } }
@@ -1281,25 +1305,23 @@ body {
           text-align: right;
           width: 250px;
           position: relative; }
-          @media (max-width: 767px) {
+          @media (max-width: 900px) {
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper {
               width: 100%;
               text-align: center;
               padding: 25px 0 0 0; } }
           .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper .career__right__tab {
             background: #252525; }
-            @media (max-width: 767px) {
+            @media (max-width: 900px) {
               .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper .career__right__tab {
                 background: none; } }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper .career__right__tab .career__tab__img {
+              filter: grayscale(0.2);
               width: 100%;
               max-width: 250px;
               box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
               position: relative; }
-              @media (max-width: 767px) {
-                .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper .career__right__tab .career__tab__img {
-                  width: 60%; } }
-              @media (max-width: 767px) {
+              @media (max-width: 900px) {
                 .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper .career__right__tab .career__tab__img {
                   width: 100%; } }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__right__wrapper .career__right__tab .career__tab__img__small {
@@ -1307,7 +1329,7 @@ body {
         .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper {
           width: calc(100% - 250px);
           padding-right: 40px; }
-          @media (max-width: 767px) {
+          @media (max-width: 900px) {
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper {
               width: 100%;
               padding: 0; } }
@@ -1317,8 +1339,8 @@ body {
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__button ul li {
               text-align: center;
               width: 50%;
-              font-size: 14px;
-              font-size: 1.4rem;
+              font-size: 15px;
+              font-size: 1.5rem;
               font-weight: 500;
               padding-bottom: 5px;
               padding-right: 10px;
@@ -1327,24 +1349,39 @@ body {
               .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__button ul li:hover {
                 opacity: 0.6;
                 transition: 0.1s; }
+              @media (max-width: 900px) {
+                .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__button ul li {
+                  font-size: 14px;
+                  font-size: 1.4rem;
+                  font-weight: 500; } }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__button ul li:nth-child(2) {
               padding-right: 0;
               padding-left: 10px; }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__button ul li.selected {
               border-bottom: 2px solid #000;
-              font-size: 14px;
-              font-size: 1.4rem;
+              font-size: 15px;
+              font-size: 1.5rem;
               font-weight: bold; }
+              @media (max-width: 900px) {
+                .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__button ul li.selected {
+                  font-size: 14px;
+                  font-size: 1.4rem;
+                  font-weight: bold; } }
           .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__headding {
             font-size: 12px;
             font-size: 1.2rem;
             color: #333;
             letter-spacing: 1px; }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__headding span {
-              font-size: 24px;
-              font-size: 2.4rem;
+              font-size: 20px;
+              font-size: 2rem;
               font-weight: bold; }
-            @media (max-width: 767px) {
+              @media (max-width: 900px) {
+                .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__headding span {
+                  font-size: 18px;
+                  font-size: 1.8rem;
+                  font-weight: bold; } }
+            @media (max-width: 900px) {
               .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .text__headding {
                 font-size: 14px;
                 font-size: 1.4rem;
@@ -1356,16 +1393,10 @@ body {
             color: #909090;
             margin-bottom: 20px; }
           .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .career__left__tab {
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px; }
-            @media (max-width: 767px) {
-              .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .career__left__tab {
-                padding-left: 5px;
-                padding-right: 5px; } }
+            padding-top: 10px; }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .career__left__tab .career__tab__text {
-              font-size: 14px;
-              font-size: 1.4rem;
+              font-size: 15px;
+              font-size: 1.5rem;
               font-weight: 500;
               color: #333; }
               .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .career__left__tab .career__tab__text span {
@@ -1373,6 +1404,11 @@ body {
                 font-size: 20px;
                 font-size: 2rem;
                 font-weight: bold; }
+              @media (max-width: 900px) {
+                .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .career__left__tab .career__tab__text {
+                  font-size: 14px;
+                  font-size: 1.4rem;
+                  font-weight: 500; } }
             .p-main .p-main__career .p-main__career__wrapper .p-main__career__box .p-main__career__contents .career__left__wrapper .career__left__tab .career__tab__text__small {
               display: none; }
 .p-main .p-main__project {
@@ -1431,7 +1467,7 @@ body {
         .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__left {
           width: 400px;
           border-top: 3px solid #222;
-          padding: 20px 10px;
+          padding: 30px 10px 20px 10px;
           text-align: center; }
           @media (max-width: 1024px) {
             .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__left {
@@ -1441,7 +1477,7 @@ body {
               width: 100%;
               padding: 10px; } }
           .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__left img {
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 3px 20px -2px rgba(25, 25, 25, 0.3);
             width: 100%;
             height: auto; }
           .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__left .button {
@@ -1471,7 +1507,7 @@ body {
           width: calc(100% - 450px);
           border-top: 3px solid #222;
           margin-left: 50px;
-          padding: 20px 20px; }
+          padding: 30px 20px 20px 20px; }
           @media (max-width: 1024px) {
             .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right {
               width: calc(100% - 350px); } }
@@ -1482,14 +1518,24 @@ body {
               border-top: none;
               padding: 0 10px 10px; } }
           .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right h3 {
-            font-size: 20px;
-            font-size: 2rem;
+            font-size: 22px;
+            font-size: 2.2rem;
             font-weight: bold; }
+            @media (max-width: 900px) {
+              .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right h3 {
+                font-size: 18px;
+                font-size: 1.8rem;
+                font-weight: bold; } }
           .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right p {
-            font-size: 14px;
-            font-size: 1.4rem;
+            font-size: 15px;
+            font-size: 1.5rem;
             font-weight: 500;
             color: #252525; }
+            @media (max-width: 900px) {
+              .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right p {
+                font-size: 14px;
+                font-size: 1.4rem;
+                font-weight: 500; } }
 .p-main .p-main__faq {
   margin-top: 100px;
   width: 100%;
@@ -1524,7 +1570,10 @@ body {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          margin: 0 3%; }
+          margin: 0 5%; }
+          @media (max-width: 767px) {
+            .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents {
+              margin: 0 3%; } }
           .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__left {
             width: 47%;
             margin-right: 3%;
@@ -1539,11 +1588,12 @@ body {
             .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__left .base_img {
               width: 100%; }
             .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__left .faq__img {
+              filter: grayscale(0.2);
               max-width: 450px;
               width: 100%;
               z-index: 8;
               display: inline-block;
-              box-shadow: 0 7px 40px -7px rgba(25, 25, 25, 0.9); }
+              box-shadow: 0 3px 20px -2px rgba(25, 25, 25, 0.3); }
           .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__right {
             width: 47%;
             margin-left: 3%;
@@ -1559,18 +1609,26 @@ body {
                 font-size: 22px;
                 font-size: 2.2rem;
                 font-weight: bold; }
+                @media (max-width: 900px) {
+                  .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__right .faq__text__box .faq__text h3 {
+                    font-size: 18px;
+                    font-size: 1.8rem;
+                    font-weight: bold; } }
               .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__right .faq__text__box .faq__text p {
                 color: #333;
                 margin-top: 10px;
-                font-size: 14px;
-                font-size: 1.4rem;
+                font-size: 15px;
+                font-size: 1.5rem;
                 font-weight: 500; }
+                @media (max-width: 900px) {
+                  .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__right .faq__text__box .faq__text p {
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    font-weight: 500; } }
         .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .slick-prev, .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .slick-next {
-          display: none !important;
           color: #000; }
           @media (max-width: 767px) {
             .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .slick-prev, .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .slick-next {
-              display: inline-block !important;
               transform: none;
               top: auto;
               bottom: -50px; } }
@@ -1602,12 +1660,12 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 44%;
+      width: 42%;
       position: absolute;
       bottom: 0;
-      right: 3%;
+      right: 5%;
       z-index: 3; }
-      @media (max-width: 767px) {
+      @media (max-width: 1050px) {
         .p-main .p-main__faq .p-main__faq__wrapper .faq__button__box {
           display: none; } }
       .p-main .p-main__faq .p-main__faq__wrapper .faq__button__box .faq__button {
@@ -1618,6 +1676,7 @@ body {
         transition: 0.5s;
         position: relative; }
         .p-main .p-main__faq .p-main__faq__wrapper .faq__button__box .faq__button .img {
+          filter: grayscale(0.2);
           width: 100%;
           transition: 0.5s;
           cursor: pointer; }

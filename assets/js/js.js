@@ -115,6 +115,7 @@
       scrollTop: $('#anc_10').offset().top - 600
     }, 500);
   });
+
   $('.faq__button__img').click(function() {
     var buttonClickId = event.target.id;
     $('#slick-slide-control' + buttonClickId).click();
@@ -122,6 +123,14 @@
     $('.faq__button_' + buttonClickId).addClass('button_checked');
   });
 
+  $('body').on('click', '.slick-arrow', function () {
+    var buttonId = $('.slick-active button').attr('id');
+    var buttonIdNumber = buttonId.replace(/slick-slide-control/,'');
+    console.log(buttonIdNumber);
+    $('.faq__button').removeClass('button_checked');
+    $('.faq__button_' + buttonIdNumber).addClass('button_checked');
+  })
+  
   $('.career__button').click(function() {
     careerTabHeight();
     var careerButtonClickId = event.target.id;
@@ -142,4 +151,5 @@
     $('.career__right__tab').css('height', tabRightHeight);
     $('.career__left__tab').css('height', tabLeftHeight);
   };
+
 })(jQuery);
