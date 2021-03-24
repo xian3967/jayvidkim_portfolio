@@ -118,7 +118,7 @@
             width:70%;
             box-shadow: 0 3px 20px -2px rgba(25,25,25,.3 );
             position: relative;
-            filter: grayscale(0.2);
+            filter: grayscale(0.45);
             @media (max-width: 1050px) {
               width:80%;
             }
@@ -341,7 +341,7 @@
                 background: none;
               }
               .career__tab__img{
-                filter: grayscale(0.2);
+                filter: grayscale(0.4);
                 width: 100%;
                 max-width: 250px;
                 box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -349,6 +349,9 @@
                 @media (max-width: 900px) {
                   width:100%;
                 }
+              }
+              .career__tab__img:nth-child(1){
+                filter: grayscale(0.7);
               }
               .career__tab__img__small{
                 display: none;
@@ -624,7 +627,7 @@
               }
               .faq__img{
                 filter: grayscale(0.2);
-                max-width: 450px;
+                max-width: 400px;
                 width:100%;
                 z-index: 8;
                 display:inline-block;
@@ -711,7 +714,7 @@
       bottom: 0;
       right: 5%;
       z-index: 3;
-      @media (max-width: 1050px) {
+      @media (max-width: 767px) {
         display: none;
       }
       .faq__button{
