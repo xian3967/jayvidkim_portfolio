@@ -163,5 +163,15 @@
     $('.career__right__tab').css('height', tabRightHeight);
     $('.career__left__tab').css('height', tabLeftHeight);
   };
+/*
+  $('.button_mouseover').mouseover(function() {
+    var mouseover = $(this).parent('div');
+    $(mouseover).children('img').css('filter', 'grayscale(0)');
+  });
 
+  $('.button_mouseover').mouseout(function() {
+    var mouseover = $(this).parent('div');
+    $(mouseover).children('img').css('filter', '');
+  });
+  */
 })(jQuery);

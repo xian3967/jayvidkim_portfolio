@@ -29,7 +29,7 @@
     <nav class="l-header__nav">
       <div class="l-header__nav__menu">
         <div class="l-header__nav__logo__wrapper">
-          <p class="nav__logo rns_medium"><a href="index.html">KIM JEONG HYEON</a></p>
+          <p class="nav__logo rns_medium"><a href="index.php">KIM JEONG HYEON</a></p>
         </div>
         <div class="l-header__nav__menu__wrapper rns_medium">
           <ul>
@@ -228,8 +228,8 @@
             <div class="career__right__wrapper">
               <div class="career__right__tab">
                 <div class="career__tab__img career__tab__img__big current">
-                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_01.jpg" class="ds_pc_only">
-                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_01sp.jpg" class="ds_sp_only">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_02.jpg" class="ds_pc_only">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_02sp.jpg" class="ds_sp_only">
                 </div>
                 <div class="career__tab__img career__tab__img__small">
                   <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_03.jpg" class="ds_pc_only">
@@ -248,10 +248,10 @@
         <div class="p-main__project__contents_box">
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_01.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="https://www.au.com/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="https://www.au.com/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_01.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">au ホームページ保守・運用</h3>
@@ -277,7 +277,7 @@
                   </tr>
                   <tr>
                     <th>コメント</th>
-                    <td>JavaScriptスキルの向上と、大規模なプロジェクトへの参加経験によりチームワークノウハウを養うことができました。</td>
+                    <td>JavaScriptスキルの向上と、大規模なプロジェクトへの参加経験によりチームワークのノウハウを養うことができました。</td>
                   </tr>
                 </tbody>
               </table>
@@ -285,10 +285,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_02.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="https://www.kyosanjapan.com/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="https://www.kyosanjapan.com/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_02.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <div class="">
@@ -315,7 +315,7 @@
                     </tr>
                     <tr>
                       <th>コメント</th>
-                      <td>メンバーとのコミュニケーションを積極的にとり、<br>常に報告・連絡・相談を意識して業務に取り組みました。</td>
+                      <td>メンバーとコミュニケーションを積極的にとり、常に報告・連絡・相談を意識して業務に取り組みました。</td>
                     </tr>
                   </tbody>
                 </table>
@@ -324,10 +324,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_03.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="https://www.iinexus.com/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="https://www.iinexus.com/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_03.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">iiNEXUS ホームページリニューアル</h3>
@@ -366,10 +366,10 @@
         <div class="p-main__project__contents_box p-main__project__contents__box__hide">
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_04.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="http://nayeju-beauty.com/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="http://nayeju-beauty.com/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_04.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">NAYEJU ホームページリニューアル</h3>
@@ -395,7 +395,7 @@
                   </tr>
                   <tr>
                     <th>コメント</th>
-                    <td>全般的なデザインを担当しましたので、デザインスキルのレヴェルアップにいい機会となりました。</td>
+                    <td>全般的なデザインを担当しましたので、デザインスキルをレベルアップするいい機会となりました。</td>
                   </tr>
                 </tbody>
               </table>
@@ -403,10 +403,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_09.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="http://happyegg.jp/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="http://happyegg.jp/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_05.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">ハッピーエッグ(HAPPYEGG) ホームページ制作</h3>
@@ -440,10 +440,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_05.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="https://jinro.co.jp/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="https://jinro.co.jp/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_06.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">Jinro ホームページリニューアル</h3>
@@ -469,7 +469,7 @@
                   </tr>
                   <tr>
                     <th>コメント</th>
-                    <td>他のコーダと協業しましたので、バージョン管理を特に気を使って対応しました。</td>
+                    <td>他のコーダーと共に担当したので、バージョン管理に特に気を使って対応しました。</td>
                   </tr>
                 </tbody>
               </table>
@@ -477,10 +477,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_06.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="http://meplusent.com/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="http://meplusent.com/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_07.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">MEPLUS ホームページ制作</h3>
@@ -514,10 +514,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_07.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="http://www.nenechicken.jp/menu-chicken.html">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="http://www.nenechicken.jp/menu-chicken.html">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_08.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">NeNe Chicken ホームページ制作</h3>
@@ -551,10 +551,10 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_08.jpg" alt="">
-              <div class="button">
-                <a target="_blank" href="https://saccus.jp/">ホームページ訪問</a>
-              </div>
+              <a target="_blank" href="https://saccus.jp/">
+                <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_09.jpg" alt="">
+                <div class="button button_mouseover">Visit Page</div>
+              </a>
             </div>
             <div class="p-main__project__contents__right">
               <h3 class="">サーカスホームページ制作</h3>
@@ -699,7 +699,7 @@
               080-2133-3587
             </p>
             <div class="contact__button">
-              <a class="rns_medium" href="index.html">Return to Top</a>
+              <a class="rns_medium" href="index.php">Return to Top</a>
             </div>
           </div>
           <div class="l-footer__contents__right">

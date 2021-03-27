@@ -72,7 +72,7 @@
       padding: 0 3%;
       .p-main__about__title{
         text-align: center;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         @include fzb(32);
         line-height: 3.2rem;
       }
@@ -189,10 +189,9 @@
     width:100%;
     max-width: 1200px;
     .p-main__skill__title{
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       padding:60px 0 0px;
       text-align: center;
-      letter-spacing: 3px;
       @include fzb(32);
       line-height: 3.2rem;
     }
@@ -279,7 +278,7 @@
       padding: 0 3%;
       .p-main__career__title{
         text-align: center;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         @include fzb(32);
         line-height: 3.2rem;
       }
@@ -467,9 +466,8 @@
     width:100%;
     max-width: 1200px;
     .p-main__project__title{
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       text-align: center;
-      letter-spacing: 3px;
       @include fzb(32);
       line-height: 3.2rem;
     }
@@ -514,6 +512,7 @@
           border-top: 3px solid #222;
           padding: 30px 10px 20px 10px;
           text-align: center;
+          position: relative;
           @media (max-width: 1024px) {
             width: 300px;
           }
@@ -521,33 +520,62 @@
             width: 100%;
             padding:20px 10px 10px 10px;
           }
-          img{
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-            width:100%;
-            height:auto;
-          }
-          .button{
-            padding:0 5px;
-            width:100%;
-            a{
-              width: 100%;
-              margin:15px 0;
+          a{
+            width: 100%;
+            position: relative;
+            display: inline-block;
+            img{
+              box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+              width:100%;
+              height:auto;
+              transition: 0.2s;
+              filter: grayscale(0.5);
+            }
+            .button{
+              position: absolute;
+              right: 20px;
+              bottom: 20px;
               display: block;
-              background: #333;
               padding: 10px;
-              color: $white;
-              @include fz(14);
-              position: relative;
+              color: $black;
+              @include fzlb(14);
               text-align: center;
-              &:after{
-                content: '>';
-                position: absolute;
-                color: $white;
-                top: 9px;
-                right: 10px;
+              transition: 0.2s;
+              width:100px;
+              @media (max-width: 1024px) {
+                right: 15px;
+                bottom: 15px;
               }
-              &:hover{
-                opacity: 0.7;
+              &:after, &:before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 50%;
+                content: "";
+                height: 2px;
+                background: #333;
+                -webkit-transition: all ease .5s;
+                transition: all ease .5s;
+              }
+              &:before{
+                left: auto;
+                right: 0;
+                top: auto;
+                bottom: 0;
+              }
+            }
+          }
+          &:hover{
+            img{
+              filter: grayscale(0);
+            }
+            .button{
+              @include fzb(14);
+              &:before{
+                right: 50%;
+              }
+              &:after{
+                left: 50%;
               }
             }
           }
@@ -568,6 +596,7 @@
           }
           h3{
             @include fzb(22);
+            margin-bottom: 10px;
             @media (max-width: 900px) {
               @include fzb(18);
             }
@@ -589,9 +618,17 @@
                 font-weight: 600;
                 vertical-align: top;
                 padding:5px 0;
+                @media (max-width: 1024px) {
+                  padding: 3px 0;
+                  min-width: 90px;
+                  }
               }
               td{
                 font-weight: 500;
+                padding: 5px 0;
+                @media (max-width: 1024px) {
+                  padding: 3px 0;
+                }
               }
             }
           }
@@ -790,7 +827,7 @@
       }
     }
     .p-main__faq__title{
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       text-align: center;
       @include fzb(32);
       color:$black;

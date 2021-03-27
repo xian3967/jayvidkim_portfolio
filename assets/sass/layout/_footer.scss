@@ -17,6 +17,7 @@
     .l-footer__title{
       padding:60px 0 0;
       text-align: center;
+      letter-spacing: 2px;
       @include fzb(40);
       color:$black;
       line-height: 50px;
@@ -58,13 +59,14 @@
               margin-bottom: 30px;
             }
             a{
-              border: 2px solid $black;
+              border: 2px solid $darkGray;
               color: $black;
               padding: 15px 25px;
               @include fzb(20);
               transition: .2s ease;
               &:hover{
-                opacity:0.5;
+                background: $darkGray;
+                color:$white;
               }
             }
           }
@@ -175,10 +177,10 @@
                   outline: none !important;
                   cursor: pointer;
                   background: none;
-                  border: 0.2rem solid #000;
-                  border-color: rgba(0, 0, 0, 0.6);
+                  border: 0.2rem solid $darkGray;
                   &:hover{
-                    opacity:0.5;
+                    background: $darkGray;
+                    color:$white;
                   }
                 }
               }
