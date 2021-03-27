@@ -86,6 +86,18 @@
 */
   });
 
+  $(window).scroll(function() {
+    $('.scroll_graph').each(function() {
+      var POS = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > POS - windowHeight + 150) {
+        var graphLength = $(this).data('contents');
+        $(this).width(graphLength + '%');
+      }
+    });
+  });
+
   $(document).on('click', 'a[href^="#"]', function(event) {
     event.preventDefault();
     $('html, body').animate({
@@ -129,8 +141,8 @@
     console.log(buttonIdNumber);
     $('.faq__button').removeClass('button_checked');
     $('.faq__button_' + buttonIdNumber).addClass('button_checked');
-  })
-  
+  });
+
   $('.career__button').click(function() {
     careerTabHeight();
     var careerButtonClickId = event.target.id;

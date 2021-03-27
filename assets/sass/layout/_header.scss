@@ -147,7 +147,7 @@ body{
       bottom:0;
       display: none;
       z-index: 250;
-      background: url('../images/section_skills_img_02.jpg') center fixed;
+      background: url('../images/section_skills_img_01.jpg') center fixed;
       @media (min-width: 901px) {
         display:none !important
       }
@@ -304,13 +304,13 @@ body{
           position: relative;
         }
         .l-header__main__background__img__01{
-          background: url('../images/main_05.jpg') no-repeat center center fixed;
+          background: url('../images/main.jpg') no-repeat center center fixed;
           background-size: cover;
           filter: grayscale(0.5);
         }
         @media (max-width: 900px) {
           .l-header__main__background__img__01{
-            background: url('../images/main_05.jpg') no-repeat top center scroll;
+            background: url('../images/main.jpg') no-repeat top center scroll;
             background-size: cover;
             filter: grayscale(0.5);
           }
@@ -350,8 +350,7 @@ body{
         }
         .l-header__main__img{
           display: none;
-          width: 100%;
-          max-width: 330px;
+          height: 55%;
           position: absolute;
           top:35%;
           right:150px;
@@ -359,7 +358,7 @@ body{
           @media (max-width: 1200px) {
           }
           img{
-            width:100%;
+            height:100%;
             box-shadow: 0 3px 20px -2px rgba(25,25,25,.3 );
             filter: grayscale(0.3);
           }
