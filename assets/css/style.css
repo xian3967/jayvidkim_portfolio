@@ -891,6 +891,10 @@ body {
             font-size: 2.2rem;
             font-weight: bold;
             margin-bottom: 10px; }
+          .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .screen-reader-response, .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .wpcf7-response-output {
+            display: none !important; }
+          .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .wpcf7-not-valid-tip {
+            display: none !important; }
           .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .l-footer__form__box__upper {
             display: flex;
             -ms-flex-wrap: wrap;
@@ -962,7 +966,7 @@ body {
                   box-shadow: none; }
           .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .l-footer__form__box__button .form-group {
             text-align: right; }
-            .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .l-footer__form__box__button .form-group button {
+            .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .l-footer__form__box__button .form-group input {
               display: inline-block;
               position: relative;
               transition: .2s ease;
@@ -977,7 +981,7 @@ body {
               background: none;
               border: 0.2rem solid #000;
               border-color: rgba(0, 0, 0, 0.6); }
-              .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .l-footer__form__box__button .form-group button:hover {
+              .l-footer .l-footer__wrapper .l-footer__contents__box .l-footer__contents .l-footer__contents__right .l-footer__form .l-footer__form__box__button .form-group input:hover {
                 opacity: 0.5; }
 
 /*

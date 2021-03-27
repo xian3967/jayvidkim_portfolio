@@ -16,12 +16,12 @@
   <meta property="og:description" content="Front-End enginer 金正賢のポートフォリオ紹介用のページです。">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+  <script type="text/javascript" src="/wp-content/themes/kimjeonghyeon/assets/js/slick.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/circular.css">
-  <link rel="stylesheet" href="./assets/css/slick-theme.css">
-  <link rel="stylesheet" href="./assets/css/slick.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/wp-content/themes/kimjeonghyeon/assets/css/circular.css">
+  <link rel="stylesheet" href="/wp-content/themes/kimjeonghyeon/assets/css/slick-theme.css">
+  <link rel="stylesheet" href="/wp-content/themes/kimjeonghyeon/assets/css/slick.css">
+  <link rel="stylesheet" href="/wp-content/themes/kimjeonghyeon/assets/css/style.css">
 </head>
 
 <body>
@@ -86,7 +86,7 @@
           <div class="l-header__main__title rns_medium">
             <h1>Front-End Engineer<br /><span>KIM JEONG HYEON</span></h1>
           </div>
-          <div class="l-header__main__img"><img src="./assets/images/header_img_01.jpg" class="header_img"></div>
+          <div class="l-header__main__img"><img src="/wp-content/themes/kimjeonghyeon/assets/images/header_img_01.jpg" class="header_img"></div>
         </div>
         <div class="l-header__intro">
           <div class="intro">
@@ -112,7 +112,7 @@
         <div class="p-main__about__contents">
           <div class="img__wrapper">
             <div class="p-main__about__contents__background"></div>
-            <img src="./assets/images/section_about_img_01.jpg" class="img">
+            <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_about_img_01.jpg" class="img">
           </div>
           <div class="text__wrapper">
             <p class="text__subheadding rns_light">
@@ -228,12 +228,12 @@
             <div class="career__right__wrapper">
               <div class="career__right__tab">
                 <div class="career__tab__img career__tab__img__big current">
-                  <img src="./assets/images/section_career_img_01.jpg" class="ds_pc_only">
-                  <img src="./assets/images/section_career_img_01sp.jpg" class="ds_sp_only">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_01.jpg" class="ds_pc_only">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_01sp.jpg" class="ds_sp_only">
                 </div>
                 <div class="career__tab__img career__tab__img__small">
-                  <img src="./assets/images/section_career_img_03.jpg" class="ds_pc_only">
-                  <img src="./assets/images/section_career_img_03sp.jpg" class="ds_sp_only">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_03.jpg" class="ds_pc_only">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_career_img_03sp.jpg" class="ds_sp_only">
                 </div>
               </div>
             </div>
@@ -248,7 +248,7 @@
         <div class="p-main__project__contents_box">
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_01.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_01.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="https://www.au.com/">ホームページ訪問</a>
               </div>
@@ -285,7 +285,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_02.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_02.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="https://www.kyosanjapan.com/">ホームページ訪問</a>
               </div>
@@ -324,7 +324,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_03.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_03.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="https://www.iinexus.com/">ホームページ訪問</a>
               </div>
@@ -366,7 +366,7 @@
         <div class="p-main__project__contents_box p-main__project__contents__box__hide">
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_04.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_04.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="http://nayeju-beauty.com/">ホームページ訪問</a>
               </div>
@@ -403,7 +403,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_09.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_09.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="http://happyegg.jp/">ホームページ訪問</a>
               </div>
@@ -440,7 +440,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_05.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_05.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="https://jinro.co.jp/">ホームページ訪問</a>
               </div>
@@ -477,7 +477,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_06.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_06.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="http://meplusent.com/">ホームページ訪問</a>
               </div>
@@ -514,7 +514,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_07.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_07.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="http://www.nenechicken.jp/menu-chicken.html">ホームページ訪問</a>
               </div>
@@ -551,7 +551,7 @@
           </div>
           <div class="p-main__project__contents">
             <div class="p-main__project__contents__left">
-              <img src="./assets/images/section_project_img_08.jpg" alt="">
+              <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_project_img_08.jpg" alt="">
               <div class="button">
                 <a target="_blank" href="https://saccus.jp/">ホームページ訪問</a>
               </div>
@@ -602,7 +602,7 @@
             <div class="p-main__faq__slide">
               <div class="p-main__faq__contents">
                 <div class="p-main__faq__flex__left">
-                  <img src="./assets/images/section_faq_img_03.jpg" class="faq__img img_01">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_03.jpg" class="faq__img img_01">
                 </div>
                 <div class="p-main__faq__flex__right">
                   <div class="faq__text__box">
@@ -619,7 +619,7 @@
             <div class="p-main__faq__slide">
               <div class="p-main__faq__contents">
                 <div class="p-main__faq__flex__left">
-                  <img src="./assets/images/section_faq_img_02.jpg" class="faq__img img_02">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_02.jpg" class="faq__img img_02">
                 </div>
                 <div class="p-main__faq__flex__right">
                   <div class="faq__text__box">
@@ -637,7 +637,7 @@
             <div class="p-main__faq__slide">
               <div class="p-main__faq__contents">
                 <div class="p-main__faq__flex__left">
-                  <img src="./assets/images/section_faq_img_01.jpg" class="faq__img img_03">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_01.jpg" class="faq__img img_03">
                 </div>
                 <div class="p-main__faq__flex__right">
                   <div class="faq__text__box">
@@ -655,7 +655,7 @@
             <div class="p-main__faq__slide">
               <div class="p-main__faq__contents">
                 <div class="p-main__faq__flex__left">
-                  <img src="./assets/images/section_faq_img_04.jpg" class="faq__img img_04">
+                  <img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_04.jpg" class="faq__img img_04">
                 </div>
                 <div class="p-main__faq__flex__right">
                   <div class="faq__text__box">
@@ -673,10 +673,10 @@
           </div>
         </div>
         <div class="faq__button__box">
-          <div class="faq__button faq__button_00 button_checked"><img src="./assets/images/section_faq_img_03.jpg" class="img faq__button__img current_img" id="00"></div>
-          <div class="faq__button faq__button_01"><img src="./assets/images/section_faq_img_02.jpg" class="img faq__button__img" id="01"></div>
-          <div class="faq__button faq__button_02"><img src="./assets/images/section_faq_img_01.jpg" class="img faq__button__img" id="02"></div>
-          <div class="faq__button faq__button_03"><img src="./assets/images/section_faq_img_04.jpg" class="img faq__button__img" id="03"></div>
+          <div class="faq__button faq__button_00 button_checked"><img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_03.jpg" class="img faq__button__img current_img" id="00"></div>
+          <div class="faq__button faq__button_01"><img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_02.jpg" class="img faq__button__img" id="01"></div>
+          <div class="faq__button faq__button_02"><img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_01.jpg" class="img faq__button__img" id="02"></div>
+          <div class="faq__button faq__button_03"><img src="/wp-content/themes/kimjeonghyeon/assets/images/section_faq_img_04.jpg" class="img faq__button__img" id="03"></div>
         </div>
       </div>
     </section>
@@ -705,41 +705,14 @@
           <div class="l-footer__contents__right">
             <h3 class="rns_medium">Contact Me</h3>
             <form id="form-contact" method="post" class="l-footer__form">
-              <div class="l-footer__form__box__upper">
-                <div class="l-footer__form__box__upper__content">
-                  <div class="form-group rns_medium">
-                    <label for="form-contact-name">Your Name</label>
-                    <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required="">
-                  </div>
-                </div>
-                <div class="l-footer__form__box__upper__content">
-                  <div class="form-group rns_medium">
-                    <label for="form-contact-email">Your Email</label>
-                    <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required="">
-                  </div>
-                </div>
-              </div>
-              <div class="l-footer__form__box__lower">
-                <div class="l-footer__form__box__lower__content">
-                  <div class="form-group rns_medium">
-                    <label for="form-contact-message">Your Message</label>
-                    <textarea class="y-scroll form-control" id="form-contact-message" rows="8" name="message" placeholder="Your Message" required=""></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="l-footer__form__box__button">
-                <div class="form-group rns_medium">
-                  <button type="submit" class="btn pull-right btn-default" id="form-contact-submit">Send a Message</button>
-                </div>
-                <div class="form-contact-status"></div>
-              </div>
+              <?php echo do_shortcode("[contact-form-7 id='6!' title='contact']"); ?>
             </form>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <script src="./assets/js/js.js"></script>
+  <script src="/wp-content/themes/kimjeonghyeon/assets/js/js.js"></script>
   <script type="text/javascript">
     /*
     (function($) {
