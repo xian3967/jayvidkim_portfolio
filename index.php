@@ -391,7 +391,7 @@
                   </tr>
                   <tr>
                     <th>使用スキル</th>
-                    <td>HTML、CSS、PhotoShop、JavaScript、Git、Illustrator</td>
+                    <td>HTML、CSS、PhotoShop、JavaScript、Illustrator</td>
                   </tr>
                   <tr>
                     <th>コメント</th>
@@ -465,7 +465,7 @@
                   </tr>
                   <tr>
                     <th>使用スキル</th>
-                    <td>HTML、CSS、PhotoShop、JavaScript、Git、Illustrator</td>
+                    <td>HTML、CSS、PhotoShop、JavaScript、Illustrator</td>
                   </tr>
                   <tr>
                     <th>コメント</th>
@@ -502,7 +502,7 @@
                   </tr>
                   <tr>
                     <th>使用スキル</th>
-                    <td>HTML、CSS、PhotoShop、JavaScript、Git</td>
+                    <td>HTML、CSS、PhotoShop、JavaScript</td>
                   </tr>
                   <tr>
                     <th>コメント</th>
@@ -576,7 +576,7 @@
                   </tr>
                   <tr>
                     <th>使用スキル</th>
-                    <td>HTML、CSS、PhotoShop、JavaScript、Git</td>
+                    <td>HTML、CSS、PhotoShop、JavaScript</td>
                   </tr>
                   <tr>
                     <th>コメント</th>

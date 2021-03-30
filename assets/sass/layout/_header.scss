@@ -12,7 +12,7 @@ body{
       position:fixed;
       top:0;
       background: $white;
-      display: block;
+      display: none;
       width:100%;
       z-index: 300;
       box-shadow: 3px 3px 2px 0.5px rgba(0,0,0,0.1);
@@ -71,7 +71,7 @@ body{
       .l-header__nav__hambugermenu__button{
         float:right;
         display:none;
-        padding-top: 12px;
+        padding-top: 13px;
         padding-right: 15px;
         @media (max-width: 900px) {
             display: block;
@@ -87,7 +87,7 @@ body{
           li:nth-child(1){
             width: 100%;
             height: 3px;
-            top: 6px;
+            top: 5px;
             background-color: $black;
             position: absolute;
             -o-transition: all 0.1s ease-out;
@@ -97,7 +97,7 @@ body{
           li:nth-child(2){
             width: 100%;
             height: 3px;
-            top: 14px;
+            top: 13px;
             background-color: $black;
             position: absolute;
             -o-transition: all 0.1s ease-out;
@@ -107,7 +107,7 @@ body{
           li:nth-child(3){
             width: 100%;
             height: 3px;
-            top: 22px;
+            top: 21px;
             background-color: $black;
             position: absolute;
             -o-transition: all 0.1s ease-out;

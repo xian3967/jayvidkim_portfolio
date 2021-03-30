@@ -9,6 +9,7 @@
     if (mediaMatch.matches) {
       $('.l-header__main__background__text').fadeIn();
     }
+    $('.l-header__nav__menu').fadeIn();
   }, 100);
 
   $(window).resize(function() {
@@ -173,5 +174,5 @@
     var mouseover = $(this).parent('div');
     $(mouseover).children('img').css('filter', '');
   });
-  */
+*/
 })(jQuery);
