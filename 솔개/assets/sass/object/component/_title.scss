@@ -1,0 +1,29 @@
+.c-title {
+  @include fzb(26);
+  text-align: left;
+  color: $darkBlack;
+  width: 100%;
+  position: relative;
+  .en{
+    @include fzb(14);
+    padding-left: 10px;
+    color: $maincolor;
+  }
+}
+
+.c-subpage_title {
+  width: 100%;
+  @include fzb(32);
+  text-align: center;
+  color: $darkBlack;
+  width: 100%;
+  position: relative;
+  letter-spacing: 2px;
+  font-family: 'Josefin Sans', sans-serif;
+  .sub_title{
+    @include fzb(14);
+    padding-left: 10px;
+    color: $maincolor;
+    display: block;
+  }
+}

@@ -1,0 +1,193 @@
+.l-footer{
+  margin-top:180px;
+  background: url('../images/section_contact_img_01.jpg') center fixed;
+  background-size: cover;
+  @media (max-width: 900px) {
+    background: url('../images/section_contact_img_01sp.jpg') center scroll;
+    background-size: cover;
+  }
+  @media (max-width: 767px) {
+    margin-top: 100px;
+  }
+  .l-footer__wrapper{
+    margin:0 auto;
+    width:100%;
+    max-width: 1200px;
+    padding:0 3%;
+    .l-footer__title{
+      padding:60px 0 0;
+      text-align: center;
+      letter-spacing: 2px;
+      @include fzb(40);
+      color:$black;
+      line-height: 50px;
+    }
+    .l-footer__subtitle{
+      text-align: center;
+      margin-bottom: 40px;
+      @include fz(18);
+      color:$f9;
+    }
+    .l-footer__contents__box{
+      width:100%;
+      padding-bottom: 100px;
+      .l-footer__contents{
+        display: flex;
+        flex-wrap: wrap;
+        .l-footer__contents__left{
+          width: 40%;
+          @media (max-width: 767px) {
+            width:100%;
+          }
+          h3{
+            color:$black;
+            @include fzb(22);
+            margin-bottom: 10px;
+          }
+          .l-footer__contents__left__text{
+            margin-bottom: 10px;
+            color:$black;
+            @include fzb(16);
+          }
+          .l-footer__contents__left__text:nth-child(1){
+            margin-bottom: 20px;
+          }
+          .contact__button{
+            width: 100%;
+            padding:30px 0;
+            @media (max-width: 767px) {
+              margin-bottom: 30px;
+            }
+            a{
+              border: 2px solid $darkGray;
+              color: $black;
+              padding: 15px 25px;
+              @include fzb(20);
+              transition: .2s ease;
+              &:hover{
+                background: $darkGray;
+                color:$white;
+              }
+            }
+          }
+        }
+        .l-footer__contents__right{
+          width: 60%;
+          @media (max-width: 767px) {
+            width:100%;
+          }
+          h3{
+            color:$black;
+            @include fzb(22);
+            margin-bottom: 10px;
+          }
+          .l-footer__form{
+            .screen-reader-response, .wpcf7-response-output{
+              display: none !important;
+            }
+            .wpcf7-not-valid-tip{
+              display: none !important;
+            }
+            .l-footer__form__box__upper{
+              display: flex;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              .l-footer__form__box__upper__content{
+                width: 50%;
+                padding-right: 15px;
+                .form-group{
+                  color: $black;
+                  padding-bottom: 20px;
+                  position: relative;
+                  label{
+                    @include fzlb(14);
+                    font-weight: 600;
+                  }
+                  .form-control{
+                    margin-top: 10px;
+                    border: .2rem solid $black;
+                    border-radius: .3rem;
+                    transition: .3s;
+                    transform-style: preserve-3d;
+                    -webkit-appearance: none;
+                    background-color: $black;
+                    outline: none !important;
+                    width: 100%;
+                    height: inherit;
+                    padding: 1.5rem;
+                    background-color: transparent;
+                    border-color: rgba(0, 0, 0, .6);
+                    color: $black;
+                    @include fzlb(14);
+                    box-shadow: none;
+                  }
+                }
+              }
+              .l-footer__form__box__upper__content:nth-child(2){
+                padding-left: 15px;
+                padding-right: 0;
+              }
+            }
+            .l-footer__form__box__lower{
+              width: 100%;
+              .l-footer__form__box__lower__content{
+                width: 100%;
+                .form-group{
+                  color: $black;
+                  padding-bottom: 20px;
+                  position: relative;
+                  label{
+                    @include fz(14);
+                    font-weight: 600;
+                  }
+                  .form-control{
+                    margin-top: 10px;
+                    border: .2rem solid $black;
+                    border-radius: .3rem;
+                    transition: .3s;
+                    transform-style: preserve-3d;
+                    -webkit-appearance: none;
+                    background-color: $black;
+                    outline: none !important;
+                    width: 100%;
+                    height: inherit;
+                    padding: 1.5rem;
+                    background-color: transparent;
+                    border-color: rgba(0, 0, 0 , .6);
+                    color: $black;
+                    @include fzlb(14);
+                    box-shadow: none;
+                  }
+                  textarea{
+                  }
+                }
+              }
+            }
+            .l-footer__form__box__button{
+              .form-group{
+                text-align: right;
+                input{
+                  display: inline-block;
+                  position: relative;
+                  transition: .2s ease;
+                  color: $f13;
+                  @include fzb(14);
+                  border-radius: .2rem;
+                  padding: 1.4rem 1.6rem 1.3rem 1.6rem;
+                  outline: none !important;
+                  cursor: pointer;
+                  background: none;
+                  border: 0.2rem solid $darkGray;
+                  &:hover{
+                    background: $darkGray;
+                    color:$white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
