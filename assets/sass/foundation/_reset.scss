@@ -32,8 +32,10 @@ table {
 }
 fieldset,
 img {
-	border:0;
-	vertical-align: middle;
+	max-width: 100%;
+ 	height: auto;
+ 	border: 0;
+ 	vertical-align: middle;
 }
 /*form部品ブラウザごとのスタイルリセット*/
 input,
