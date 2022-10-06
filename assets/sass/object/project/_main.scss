@@ -349,7 +349,7 @@
             padding: 0 20px;
           }
           @media (max-width: 767px) {
-            padding: 0 5%;
+            padding: 0 25%;
           }
           .p-main__career__scroll__container {
             width: 100%;
@@ -412,6 +412,16 @@
                     width: 500px;
                     margin-right: 50px;
                     text-align: right;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-box-align: flex-end;
+                    -ms-flex-align: flex-end;
+                    align-items: flex-end;
+                    flex-direction: column;
                     @media (max-width: 1024px) {
                       width: calc(46vw - 40px);
                       margin-right: 4vw;
@@ -425,6 +435,7 @@
                       font-size: 20px;
                       font-weight: bold;
                       letter-spacing: 2px;
+                      width: 100%;
                       @media (max-width: 1024px) {
                         font-size: 18px;
                       }
@@ -436,6 +447,7 @@
                       font-size: 30px;
                       font-weight: bold;
                       margin-bottom: 20px;
+                      width: 100%;
                       @media (max-width: 1024px) {
                         font-size: 22px;
                       }
@@ -447,16 +459,22 @@
                       font-size: 18px;
                       color: #222;
                       font-weight: 300;
+                      width: 400px;
+                      text-align: left;
                       @media (max-width: 1024px) {
                         font-size: 16px;
                       }
                       @media (max-width: 767px) {
                         font-size: 14px;
+                        width: 100%;
                       }
                     }
                     span{
                       font-size: 20px;
                       font-weight: bold;
+                      display: block;
+                      width: 100%;
+                      text-align: right;
                     }
                   }
                   .p-main__career__scroll__item__right {
