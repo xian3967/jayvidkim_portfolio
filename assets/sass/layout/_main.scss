@@ -28,6 +28,18 @@
             @media (max-width: 767px) {
               height: 140vw;
             }
+            video {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 1920px;
+            }
+            &.gray {
+              video {
+                filter: grayscale(0.7);
+              }
+            }
             img {
               width: 100%;
               height: 100%;
@@ -54,6 +66,22 @@
           line-height: 9vw;
           color: #fff;
           margin-bottom: 4vw;
+          position: absolute;
+          bottom: 4vw;
+          left: 0;
+          transition: 1.2s;
+          transition-timing-function: ease-in;
+          opacity: 0;
+          &.first-current {
+            opacity: 1;
+            transition-timing-function: ease-out !important;
+            transition-delay: 0.5s !important;
+          }
+          &.current {
+            transition-timing-function: ease-out !important;
+            opacity: 1;
+            transition-delay: 1.7s !important;
+          }
         }
         .l-main__mv__sp-text__sub-title {
           width: 100%;
@@ -61,6 +89,7 @@
           font-weight: bold;
           line-height: 4vw;
           color: #fff;
+          margin-top: 4vw;
         }
       }
       .l-main__mv__position {
@@ -78,6 +107,7 @@
           position: relative;
           width: 100%;
           height: 50vh;
+          overflow: hidden;
           @media (max-width: 767px) {
             height: 50%;
           }
@@ -103,11 +133,29 @@
           position: absolute;
           bottom: 10px;
           left: 12%;
+          p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 1.2s;
+            transition-timing-function: ease-in;
+            transform: translateY(101%);
+            &.first-current {
+              transform: translateY(0) !important;
+              transition-timing-function: ease-out !important;
+              transition-delay: 2s !important;
+            }
+            &.current {
+              transform: translateY(0) !important;
+              transition-timing-function: ease-out !important;
+              transition-delay: 1.7s !important;
+            }
+          }
           @media (max-width: 1024px) {
             left: 5%;
           }
           @media (max-width: 767px) {
-            display: none;
+            display: none !important;
           }
           p {
             font-size: 6.4vw;
@@ -228,7 +276,7 @@
             }
             .l-main__mv__position__list__item__logo {
               z-index: 4;
-              transition: 1s;
+              transition: 1.2s;
               position: absolute;
               width: 60%;
               height: 100%;
@@ -242,7 +290,7 @@
                 width: 45%;
               }
               .l-main__mv__position__list__item__logo-item {
-                transition: 1.5s;
+                transition: 1.2s;
                 transition-timing-function: ease-in;
                 position: absolute;
                 &.first-current {
@@ -261,7 +309,7 @@
                 &.current {
                   transform: translateY(0);
                   transition-timing-function: ease-out;
-                  transition-delay: 2s;
+                  transition-delay: 1.7s;
                 }
               }
             }
@@ -274,7 +322,7 @@
                 &.current {
                   transform: translateX(0);
                   transition-timing-function: ease-out;
-                  transition-delay: 2s;
+                  transition-delay: 1.7s;
                 }
               }
             }
@@ -287,7 +335,7 @@
                 &.current {
                   transform: translateX(0);
                   transition-timing-function: ease-out;
-                  transition-delay: 2s;
+                  transition-delay: 1.7s;
                 }
               }
             }
@@ -300,7 +348,7 @@
                 &.current {
                   transform: translateY(0);
                   transition-timing-function: ease-out;
-                  transition-delay: 2s;
+                  transition-delay: 1.7s;
                 }
               }
             }

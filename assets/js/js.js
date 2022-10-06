@@ -198,6 +198,11 @@ $(document).ready(function() {
     $(this).find('.l-main__mv__position__list__item__logo-item').removeClass('first-current').removeClass(currentClass)
       .eq(nextSlide).addClass(currentClass);
   });
+  $('.js-silde-text').each(function() {
+    let currentClass = 'current';
+    $(this).find('.js-silde-text__item').removeClass('first-current').removeClass(currentClass)
+      .eq(nextSlide).addClass(currentClass);
+  });
 });
 });
 //
