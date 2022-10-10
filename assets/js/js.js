@@ -41,9 +41,9 @@
 
   $(window).scroll(function() {
     $('.fade_slide').each(function() {
-      var POS = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
+      let POS = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
       if (scroll > POS - windowHeight + 200) {
         $(this).css({
           'opacity': '1',
@@ -58,11 +58,11 @@
 
   $(window).scroll(function() {
     $('.scroll_graph').each(function() {
-      var POS = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
+      let POS = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
       if (scroll > POS - windowHeight + 150) {
-        var graphLength = $(this).data('contents');
+        let graphLength = $(this).data('contents');
         $(this).width(graphLength + '%');
       }
     });
@@ -99,22 +99,25 @@
   });
 
   $('.faq__button__img').click(function() {
-    var buttonClickId = event.target.id;
+    let buttonClickId = event.target.id;
     $('#slick-slide-control' + buttonClickId).click();
     $('.faq__button').removeClass('button_checked');
     $('.faq__button_' + buttonClickId).addClass('button_checked');
   });
 
   $('body').on('click', '.slick-arrow', function() {
-    var buttonId = $('.slick-active button').attr('id');
-    var buttonIdNumber = buttonId.replace(/slick-slide-control/, '');
-    $('.faq__button').removeClass('button_checked');
-    $('.faq__button_' + buttonIdNumber).addClass('button_checked');
+    let mediaMatch = window.matchMedia("(min-width: 951px)");
+    if (mediaMatch.matches) {
+      let buttonId = $('.slick-active button').attr('id');
+      let buttonIdNumber = buttonId.replace(/slick-slide-control/, '');
+      $('.faq__button').removeClass('button_checked');
+      $('.faq__button_' + buttonIdNumber).addClass('button_checked');
+    }
   });
 
   $('.career__button').click(function() {
     careerTabHeight();
-    var careerButtonClickId = event.target.id;
+    let careerButtonClickId = event.target.id;
     $('.career__tab__text').hide().removeClass('current');
     $('.career__tab__img').hide().removeClass('current');
     $('.career__button').removeClass('selected');
@@ -127,8 +130,8 @@
   });
 
   function careerTabHeight() {
-    var tabRightHeight = $('.career__tab__img.current').outerHeight();
-    var tabLeftHeight = $('.career__tab__text.current').outerHeight();
+    let tabRightHeight = $('.career__tab__img.current').outerHeight();
+    let tabLeftHeight = $('.career__tab__text.current').outerHeight();
     $('.career__right__tab').css('height', tabRightHeight);
     $('.career__left__tab').css('height', tabLeftHeight);
   };

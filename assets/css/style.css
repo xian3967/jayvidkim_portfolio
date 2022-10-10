@@ -1316,6 +1316,9 @@ body {
     width: 100%;
     max-width: 1200px;
     padding: 0 3%; }
+    @media (max-width: 767px) {
+      .p-main .p-main__about .p-main__about__wrapper {
+        padding: 0 4%; } }
     .p-main .p-main__about .p-main__about__wrapper .p-main__about__title {
       text-align: center;
       letter-spacing: 2px;
@@ -1438,7 +1441,8 @@ body {
   padding: 0 3%; }
   @media (max-width: 767px) {
     .p-main .p-main__skill {
-      margin-top: 60px; } }
+      margin-top: 60px;
+      padding: 0 4%; } }
   .p-main .p-main__skill .p-main__skill_wrapper {
     margin: 0 auto;
     width: 100%;
@@ -1535,6 +1539,9 @@ body {
     width: 100%;
     max-width: 1200px;
     padding: 0 3%; }
+    @media (max-width: 767px) {
+      .p-main .p-main__career .p-main__career__wrapper {
+        padding: 0 4%; } }
     .p-main .p-main__career .p-main__career__wrapper .p-main__career__title {
       text-align: center;
       letter-spacing: 2px;
@@ -1588,14 +1595,7 @@ body {
         justify-content: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center;
-        padding: 0 20px; }
-        @media (max-width: 1024px) {
-          .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll {
-            padding: 0 20px; } }
-        @media (max-width: 767px) {
-          .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll {
-            padding: 0 25%; } }
+        align-items: center; }
         .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container {
           width: 100%;
           max-width: 1150px;
@@ -1696,7 +1696,8 @@ body {
                         font-size: 22px; } }
                     @media (max-width: 767px) {
                       .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left .p-main__career__scroll__item__left__title {
-                        font-size: 20px; } }
+                        font-size: 20px;
+                        margin-bottom: 10px; } }
                   .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left .p-main__career__scroll__item__left__text {
                     font-size: 18px;
                     color: #222;
@@ -1709,13 +1710,17 @@ body {
                     @media (max-width: 767px) {
                       .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left .p-main__career__scroll__item__left__text {
                         font-size: 14px;
-                        width: 100%; } }
+                        width: 100%;
+                        line-height: 21px; } }
                   .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left span {
                     font-size: 20px;
                     font-weight: bold;
                     display: block;
                     width: 100%;
                     text-align: right; }
+                    @media (max-width: 767px) {
+                      .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left span {
+                        font-size: 16px; } }
                 .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__right {
                   width: 600px; }
                   @media (max-width: 1024px) {
@@ -1782,6 +1787,9 @@ body {
       @media (max-width: 1024px) {
         .p-main .p-main__movie .p-main__movie__contents .p-main__movie__text {
           padding: 0 3%; } }
+      @media (max-width: 767px) {
+        .p-main .p-main__movie .p-main__movie__contents .p-main__movie__text {
+          padding: 0 4%; } }
       .p-main .p-main__movie .p-main__movie__contents .p-main__movie__text h2 {
         font-size: 46px;
         font-weight: bold;
@@ -1839,7 +1847,8 @@ body {
   background: url("../images/section_skills_img_01.jpg") center fixed; }
   @media (max-width: 767px) {
     .p-main .p-main__project {
-      margin-top: 60px; } }
+      margin-top: 0;
+      padding: 60px 4%; } }
   .p-main .p-main__project .p-main__project_wrapper {
     margin: 0 auto;
     width: 100%;
@@ -2052,7 +2061,7 @@ body {
           margin: 0 5%; }
           @media (max-width: 767px) {
             .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents {
-              margin: 0 3%; } }
+              margin: 0 4%; } }
           .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__left {
             width: 47%;
             margin-right: 3%;

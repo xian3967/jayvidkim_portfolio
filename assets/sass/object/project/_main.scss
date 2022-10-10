@@ -70,6 +70,9 @@
       width:100%;
       max-width: 1200px;
       padding: 0 3%;
+      @media (max-width: 767px) {
+        padding: 0 4%;
+      }
       .p-main__about__title{
         text-align: center;
         letter-spacing: 2px;
@@ -188,6 +191,7 @@
   padding:0 3%;
   @media (max-width: 767px) {
     margin-top: 60px;
+    padding: 0 4%;
   }
   .p-main__skill_wrapper{
     margin:0 auto;
@@ -288,6 +292,9 @@
       width:100%;
       max-width: 1200px;
       padding: 0 3%;
+      @media (max-width: 767px) {
+        padding: 0 4%;
+      }
       .p-main__career__title{
         text-align: center;
         letter-spacing: 2px;
@@ -343,13 +350,6 @@
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          padding: 0 20px;
-          @media (max-width: 1024px) {
-            padding: 0 20px;
-          }
-          @media (max-width: 767px) {
-            padding: 0 25%;
-          }
           .p-main__career__scroll__container {
             width: 100%;
             max-width: 1150px;
@@ -452,6 +452,7 @@
                       }
                       @media (max-width: 767px) {
                         font-size: 20px;
+                        margin-bottom: 10px;
                       }
                     }
                     .p-main__career__scroll__item__left__text {
@@ -466,6 +467,7 @@
                       @media (max-width: 767px) {
                         font-size: 14px;
                         width: 100%;
+                        line-height: 21px;
                       }
                     }
                     span{
@@ -474,6 +476,9 @@
                       display: block;
                       width: 100%;
                       text-align: right;
+                      @media (max-width: 767px) {
+                        font-size: 16px;
+                      }
                     }
                   }
                   .p-main__career__scroll__item__right {
@@ -558,6 +563,9 @@
         @media (max-width: 1024px) {
           padding: 0 3%;
         }
+        @media (max-width: 767px) {
+          padding: 0 4%;
+        }
         h2 {
           font-size: 46px;
           font-weight: bold;
@@ -620,11 +628,12 @@
   }
   .p-main__project{
   margin-top: 180px;
-  width:100%;
-  padding:60px 3%;
+  width: 100%;
+  padding: 60px 3%;
   background: url('../images/section_skills_img_01.jpg') center fixed;
   @media (max-width: 767px) {
-    margin-top: 60px;
+    margin-top: 0;
+    padding: 60px 4%;
   }
   .p-main__project_wrapper{
     margin:0 auto;
@@ -851,9 +860,9 @@
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            margin:0 5%;
+            margin: 0 5%;
             @media (max-width: 767px) {
-              margin:0 3%;
+              margin: 0 4%;
             }
             .p-main__faq__flex__left{
               width:47%;
