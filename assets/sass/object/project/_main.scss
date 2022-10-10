@@ -153,7 +153,6 @@
             span{
               @include fzb(28);
               color:$black;
-              letter-spacing: 5px;
               @media (max-width: 900px) {
                 @include fzb(22);
               }
@@ -663,6 +662,7 @@
           position: relative;
           text-align: center;
           cursor: pointer;
+          transition: 0.3s;
           box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
           &:hover{
             opacity: 0.7;
