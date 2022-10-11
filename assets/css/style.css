@@ -1674,7 +1674,8 @@ body {
                   @media (max-width: 767px) {
                     .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left {
                       width: 100%;
-                      margin-right: 0; } }
+                      margin-right: 0;
+                      padding-left: 0; } }
                   .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left .p-main__career__scroll__item__left__number {
                     font-size: 20px;
                     font-weight: bold;

@@ -15,6 +15,7 @@
     careerTabHeight();
   });
 
+//intro
   $('.introJs').addClass('display-intro');
   $(window).load(function() {
     function intro(ms) {
@@ -38,7 +39,10 @@
         $('.introJs').removeClass('display-block');
       });
   });
+//
 
+
+//scroll event
   $(window).scroll(function() {
     $('.fade_slide').each(function() {
       let POS = $(this).offset().top;
@@ -67,6 +71,8 @@
       }
     });
   });
+//
+
 
   $(document).on('click', 'a[href^="#"]', function(event) {
     event.preventDefault();
@@ -161,7 +167,7 @@
     $('.l-main__mv__slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 3000,
       speed: 2500,
       dots: false,
       arrow: false,
