@@ -11,7 +11,7 @@
       width: 100%;
       height: 100vh;
       @media (max-width: 767px) {
-        height: 140vw;
+        height: 100vh;
       }
       .l-main__mv__contents {
         position: relative;
@@ -26,7 +26,13 @@
             width: 100%;
             height: 100vh;
             @media (max-width: 767px) {
-              height: 140vw;
+              height: 100vh;
+              &:nth-child(1) {
+                display: none !important;
+              }
+              &:nth-child(3) {
+                display: none !important;
+              }
             }
             video {
               position: absolute;
@@ -41,6 +47,12 @@
                 display: none;
               }
               @media (max-width: 767px) {
+                position: relative;
+                top: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                height: 100vh;
                 &.video_sp {
                   display: block;
                 }
@@ -72,6 +84,8 @@
         z-index: 5;
         @media (max-width: 767px) {
           display: block;
+          top: 50%;
+          transform: translateY(-50%);
         }
         .l-main__mv__sp-text__title {
           width: 100%;
@@ -86,6 +100,7 @@
           transition: 1.2s;
           transition-timing-function: ease-in;
           opacity: 0;
+          display: none;
           &.first-current {
             opacity: 1;
             transition-timing-function: ease-out !important;
@@ -104,6 +119,11 @@
           line-height: 4vw;
           color: #fff;
           margin-top: 4vw;
+          @media (max-width: 767px) {
+            margin-top: 0;
+            line-height: 12vw;
+            font-size: 8vw;
+          }
         }
       }
       .l-main__mv__position {
@@ -235,6 +255,9 @@
           display: flex;
           width: 100%;
           height: 100%;
+          @media (max-width: 767px) {
+            display: none;
+          }
           .l-main__mv__position__list__item {
             width: 12.5%;
             height: 100%;
