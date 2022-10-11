@@ -34,6 +34,20 @@
               left: 50%;
               transform: translate(-50%, -50%);
               width: 1920px;
+              &.video_pc {
+                display: block;
+              }
+              &.video_sp {
+                display: none;
+              }
+              @media (max-width: 767px) {
+                &.video_sp {
+                  display: block;
+                }
+                &.video_pc {
+                  display: none;
+                }
+              }
             }
             &.gray {
               video {
