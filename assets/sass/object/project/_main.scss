@@ -518,6 +518,9 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      @media (max-width: 767px) {
+        background: #000;
+      }
       .p-main__movie__video {
         position: relative;
         width: 100%;
@@ -531,6 +534,9 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        @media (max-width: 767px) {
+          height: auto;
+        }
         video {
           width: 100%;
           overflow: hidden;
@@ -565,7 +571,11 @@
           padding: 0 3%;
         }
         @media (max-width: 767px) {
-          padding: 0 4%;
+          padding: 40% 4%;
+          position: relative;
+          top: auto;
+          left: auto;
+          transform: none;
         }
         h2 {
           font-size: 46px;
