@@ -518,6 +518,7 @@
                     @media (max-width: 767px) {
                       width: 100%;
                       margin-bottom: 5%;
+                      text-align: center;
                     }
                   }
                 }
@@ -728,6 +729,12 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        @media (max-width: 1024px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
         .p-main__project__contents__left{
           width: 450px;
           border-top: 3px solid #222;

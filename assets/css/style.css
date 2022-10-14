@@ -1768,7 +1768,8 @@ body {
                   @media (max-width: 767px) {
                     .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__right {
                       width: 100%;
-                      margin-bottom: 5%; } }
+                      margin-bottom: 5%;
+                      text-align: center; } }
 .p-main .p-main__movie {
   width: 100%; }
   .p-main .p-main__movie .p-main__movie__contents {
@@ -1950,6 +1951,12 @@ body {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: 30px; }
+        @media (max-width: 1024px) {
+          .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents {
+            margin-bottom: 20px; } }
+        @media (max-width: 767px) {
+          .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents {
+            margin-bottom: 20px; } }
         .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__left {
           width: 450px;
           border-top: 3px solid #222;
