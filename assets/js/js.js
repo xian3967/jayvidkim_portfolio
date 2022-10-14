@@ -56,6 +56,7 @@
           '-moz-transform': 'translateY(0)',
           '-ms-transform': 'translateY(0)'
         });
+        $(this).find('h2').addClass('is-animated');
       }
     });
   });
@@ -76,9 +77,16 @@
 
   $(document).on('click', 'a[href^="#"]', function(event) {
     event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top - 80
-    }, 500);
+    let target = $(this).attr('href');
+    if($(target).hasClass('is-animated')) {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 80
+      }, 500);
+    } else {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 140
+      }, 500);
+    }
   });
 
   $('.l-header__nav__hambugermenu__button').click(function() {

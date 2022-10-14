@@ -188,7 +188,7 @@ html {
     -webkit-box-shadow: 0 0 0px 1000px #222 inset; }
 
 body {
-  font-family: "Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic";
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.6;
   font-size: 14px;
   font-size: 1.4rem; }
@@ -462,7 +462,7 @@ body {
   display: none;
   width: 100%;
   z-index: 300;
-  box-shadow: 3px 3px 2px 0.5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.1); }
   @media (max-width: 980px) {
     .l-header .l-header__nav .l-header__nav__menu {
       padding-bottom: 10px; } }
@@ -1424,14 +1424,12 @@ body {
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding {
           font-size: 15px;
           font-size: 1.5rem;
-          font-weight: 500;
           color: #909090;
           letter-spacing: 1px; }
           @media (max-width: 900px) {
             .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding {
               font-size: 14px;
-              font-size: 1.4rem;
-              font-weight: 500; } }
+              font-size: 1.4rem; } }
           .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__headding span {
             font-size: 28px;
             font-size: 2.8rem;
@@ -1450,15 +1448,13 @@ body {
         .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__description {
           font-size: 15px;
           font-size: 1.5rem;
-          font-weight: 500;
           color: #333;
           margin-top: 20px; }
           @media (max-width: 900px) {
             .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__description {
               margin-top: 10px;
               font-size: 14px;
-              font-size: 1.4rem;
-              font-weight: 500; } }
+              font-size: 1.4rem; } }
           .p-main .p-main__about .p-main__about__wrapper .p-main__about__contents .text__wrapper .text__description span {
             color: #000;
             font-size: 18px;
@@ -1477,10 +1473,10 @@ body {
   .p-main .p-main__skill .p-main__skill_wrapper {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px; }
+    max-width: 1200px;
+    padding: 60px 0 0px; }
     .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__title {
       letter-spacing: 2px;
-      padding: 60px 0 0px;
       text-align: center;
       font-size: 32px;
       font-size: 3.2rem;
@@ -1538,15 +1534,13 @@ body {
         .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents p {
           color: #333;
           font-size: 15px;
-          font-size: 1.5rem;
-          font-weight: 500; }
+          font-size: 1.5rem; }
           @media (max-width: 900px) {
             .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents p {
               font-size: 14px;
-              font-size: 1.4rem;
-              font-weight: 500; } }
+              font-size: 1.4rem; } }
         .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents .p-main__skill__graph__wrapper {
-          background: #909090;
+          background: #d5d5d5;
           width: 100%;
           height: 12px;
           margin-top: 10px;
@@ -1556,6 +1550,16 @@ body {
             width: 0;
             height: 100%;
             transition: 0.7s; }
+        .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents:nth-child(1) .p-main__skill__graph {
+          background: #e67e22; }
+        .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents:nth-child(2) .p-main__skill__graph {
+          background: #268dd2; }
+        .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents:nth-child(3) .p-main__skill__graph {
+          background: #00bbf7; }
+        .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents:nth-child(4) .p-main__skill__graph {
+          background: #febb42; }
+        .p-main .p-main__skill .p-main__skill_wrapper .p-main__skill__contents_box .p-main__skill__contents:nth-child(6) .p-main__skill__graph {
+          background: #1d678b; }
 .p-main .p-main__career {
   padding: 100px 0;
   background: #fff; }
@@ -1699,8 +1703,8 @@ body {
                   flex-direction: column; }
                   @media (max-width: 1024px) {
                     .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left {
-                      width: calc(46vw - 40px);
-                      margin-right: 4vw;
+                      width: calc(50% - 40px);
+                      margin-right: 40px;
                       padding-left: 20px; } }
                   @media (max-width: 767px) {
                     .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left {
@@ -1738,11 +1742,14 @@ body {
                     text-align: left; }
                     @media (max-width: 1024px) {
                       .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left .p-main__career__scroll__item__left__text {
-                        font-size: 16px; } }
+                        font-size: 16px;
+                        max-width: 400px;
+                        width: 100%; } }
                     @media (max-width: 767px) {
                       .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left .p-main__career__scroll__item__left__text {
                         font-size: 14px;
                         width: 100%;
+                        max-width: none;
                         line-height: 21px; } }
                   .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__left span {
                     font-size: 20px;
@@ -1757,7 +1764,7 @@ body {
                   width: 600px; }
                   @media (max-width: 1024px) {
                     .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__right {
-                      width: 50vw; } }
+                      width: 50%; } }
                   @media (max-width: 767px) {
                     .p-main .p-main__career .p-main__career__wrapper .p-main__career__contents .p-main__career__scroll .p-main__career__scroll__container .p-main__career__scroll__list-wrapper .p-main__career__scroll__list .p-main__career__scroll__item .p-main__career__scroll__item__right {
                       width: 100%;
@@ -1883,10 +1890,13 @@ body {
             font-size: 14px;
             margin-bottom: 5%; } }
 .p-main .p-main__project {
-  margin-top: 180px;
+  margin-top: 120px;
   width: 100%;
   padding: 60px 3%;
   background: url("../images/section_skills_img_01.jpg") center fixed; }
+  @media (max-width: 1024px) {
+    .p-main .p-main__project {
+      margin-top: 50px; } }
   @media (max-width: 767px) {
     .p-main .p-main__project {
       margin-top: 0;
@@ -2046,7 +2056,7 @@ body {
               .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right table tr th {
                 text-align: left;
                 min-width: 120px;
-                font-weight: 600;
+                font-weight: 500;
                 vertical-align: top;
                 padding: 5px 0; }
                 @media (max-width: 1024px) {
@@ -2054,7 +2064,7 @@ body {
                     padding: 3px 0;
                     min-width: 90px; } }
               .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right table tr td {
-                font-weight: 500;
+                font-weight: 400;
                 padding: 5px 0; }
                 @media (max-width: 1024px) {
                   .p-main .p-main__project .p-main__project_wrapper .p-main__project__contents_box .p-main__project__contents .p-main__project__contents__right table tr td {
@@ -2148,13 +2158,11 @@ body {
                 color: #333;
                 margin-top: 10px;
                 font-size: 15px;
-                font-size: 1.5rem;
-                font-weight: 500; }
+                font-size: 1.5rem; }
                 @media (max-width: 900px) {
                   .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .p-main__faq__slide .p-main__faq__contents .p-main__faq__flex__right .faq__text__box .faq__text p {
                     font-size: 14px;
-                    font-size: 1.4rem;
-                    font-weight: 500; } }
+                    font-size: 1.4rem; } }
         .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .slick-prev, .p-main .p-main__faq .p-main__faq__wrapper .p-main__faq__slide__wrapper .p-main__faq__slide__show .slick-next {
           color: #000; }
           @media (max-width: 767px) {

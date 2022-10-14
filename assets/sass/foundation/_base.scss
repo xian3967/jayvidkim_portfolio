@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font-family: "Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic";
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.6;
   @include fz();
   @media only screen

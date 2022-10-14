@@ -147,11 +147,11 @@
             width:100%;
           }
           .text__headding{
-            @include fzlb(15);
+            @include fz(15);
             color:$f9;
             letter-spacing: 1px;
             @media (max-width: 900px) {
-              @include fzlb(14);
+              @include fz(14);
             }
             span{
               @include fzb(28);
@@ -166,12 +166,12 @@
             color:$black;
           }
           .text__description{
-            @include fzlb(15);
+            @include fz(15);
             color:#333;
             margin-top:20px;
             @media (max-width: 900px) {
               margin-top:10px;
-              @include fzlb(14);
+              @include fz(14);
             }
             span{
               color:$black;
@@ -197,9 +197,9 @@
     margin:0 auto;
     width:100%;
     max-width: 1200px;
+    padding:60px 0 0px;
     .p-main__skill__title{
       letter-spacing: 2px;
-      padding:60px 0 0px;
       text-align: center;
       @include fzb(32);
       line-height: 3.2rem;
@@ -256,13 +256,13 @@
         }
         p{
           color:#333;
-          @include fzlb(15);
+          @include fz(15);
           @media (max-width: 900px) {
-            @include fzlb(14);
+            @include fz(14);
           }
         }
         .p-main__skill__graph__wrapper{
-          background: #909090;
+          background: #d5d5d5;
           width: 100%;
           height: 12px;
           margin-top: 10px;
@@ -272,6 +272,31 @@
             width: 0;
             height: 100%;
             transition:0.7s;
+          }
+        }
+        &:nth-child(1) {
+          .p-main__skill__graph {
+            background: #e67e22;
+          }
+        }
+        &:nth-child(2) {
+          .p-main__skill__graph {
+            background: #268dd2;
+          }
+        }
+        &:nth-child(3) {
+          .p-main__skill__graph {
+            background: #00bbf7;
+          }
+        }
+        &:nth-child(4) {
+          .p-main__skill__graph {
+            background: #febb42;
+          }
+        }
+        &:nth-child(6) {
+          .p-main__skill__graph {
+            background: #1d678b;
           }
         }
       }
@@ -422,8 +447,8 @@
                     align-items: flex-end;
                     flex-direction: column;
                     @media (max-width: 1024px) {
-                      width: calc(46vw - 40px);
-                      margin-right: 4vw;
+                      width: calc(50% - 40px);
+                      margin-right: 40px;
                       padding-left: 20px;
                     }
                     @media (max-width: 767px) {
@@ -464,10 +489,13 @@
                       text-align: left;
                       @media (max-width: 1024px) {
                         font-size: 16px;
+                        max-width: 400px;
+                        width: 100%;
                       }
                       @media (max-width: 767px) {
                         font-size: 14px;
                         width: 100%;
+                        max-width: none;
                         line-height: 21px;
                       }
                     }
@@ -485,7 +513,7 @@
                   .p-main__career__scroll__item__right {
                     width: 600px;
                     @media (max-width: 1024px) {
-                      width: 50vw;
+                      width: 50%;
                     }
                     @media (max-width: 767px) {
                       width: 100%;
@@ -638,10 +666,13 @@
     }
   }
   .p-main__project{
-  margin-top: 180px;
+  margin-top: 120px;
   width: 100%;
   padding: 60px 3%;
   background: url('../images/section_skills_img_01.jpg') center fixed;
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
   @media (max-width: 767px) {
     margin-top: 0;
     padding: 60px 4%;
@@ -805,7 +836,7 @@
               th{
                 text-align: left;
                 min-width: 120px;
-                font-weight: 600;
+                font-weight: 500;
                 vertical-align: top;
                 padding:5px 0;
                 @media (max-width: 1024px) {
@@ -814,7 +845,7 @@
                   }
               }
               td{
-                font-weight: 500;
+                font-weight: 400;
                 padding: 5px 0;
                 @media (max-width: 1024px) {
                   padding: 3px 0;
@@ -919,9 +950,9 @@
                   p{
                     color:#333;
                     margin-top:10px;
-                    @include fzlb(15);
+                    @include fz(15);
                     @media (max-width: 900px) {
-                      @include fzlb(14);
+                      @include fz(14);
                     }
                   }
                 }
