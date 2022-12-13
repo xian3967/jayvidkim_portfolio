@@ -1,3 +1,4 @@
+/*
 (function($) {
     $.ajax({
       type: "GET",
@@ -328,3 +329,5 @@
 //
  // \assets
 //sass --watch --sourcemap=none sass\style.scss:css\style.css
+
+*/
