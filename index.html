@@ -1448,6 +1448,7 @@
   </footer>
   <script src="./assets/js/js.js"></script>
   <script src="./assets/js/common.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.3/d3.min.js"></script>
   <script type="text/javascript">
     (function($) {
       $(document).ready(function() {
@@ -1473,6 +1474,58 @@
       });
 
     })(jQuery);
+    var width = 600;
+var height = 400;
+
+// 地図の投影方法を設定
+var projection = d3.geoMercator()
+    .center([137.23, 36.03])
+    .translate([width / 2, height / 2])
+    .scale(1000);
+
+// 地図のパスジェネレータを作成
+var path = d3.geoPath()
+    .projection(projection);
+
+// 地図を表示するSVG要素を作成
+var svg = d3.select("#map")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+// 地図の背景を描画
+svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("fill", "#f7f7f7");
+
+// 地図の境界線を描画
+d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson", function(error, world) {
+    if (error) throw error;
+    svg.append("path")
+        .datum(topojson.feature(world, world.objects.countries))
+        .attr("d", path)
+        .attr("fill", "#d9d9d9");
+});
+
+// 地震の震源地を描画
+d3.xml("https://www.data.jma.go.jp/developer/xml/feed/eqvol_l.xml").then(function(xmlData) {
+    var earthquake = xmlData.getElementsByTagName("earthquake")[0];
+    var lat = parseFloat(earthquake.getAttribute("latitude"));
+    var lon = parseFloat(earthquake.getAttribute("longitude"));
+    var mag = parseFloat(earthquake.getAttribute("magnitude"));
+    var maxInt = parseInt(earthquake.getAttribute("maxInt"));
+
+    var colorScale = d3.scaleSequential(d3.interpolateReds).domain([0, maxInt]);
+
+    svg.append("circle")
+        .attr("cx", projection([lon, lat])[0])
+        .attr("cy", projection([lon, lat])[1])
+        .attr("r", mag * 2)
+        .attr("fill", colorScale(maxInt))
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 2);
+});
   </script>
 </body>
 
